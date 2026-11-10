@@ -1,0 +1,29 @@
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.expiration {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.metricValue {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.metricTitle {
+  font-size: 0.9em;
+  margin-bottom: 8px;
+}

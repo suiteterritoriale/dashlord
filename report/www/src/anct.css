@@ -1,0 +1,57 @@
+/* ANCT color scheme: DSFR "blue écume" brand + navy dark theme.
+   Overrides the DSFR palette variables (loaded after dsfr.min.css, with
+   !important to win over runtime-injected styles). */
+
+:root {
+  /* light theme (écume) */
+  --blue-france-sun-113-625: #2f4077 !important;
+  --blue-france-sun-113-625-hover: #465f9d !important;
+  --blue-france-sun-113-625-active: #5b74ad !important;
+  --blue-france-975-75: #f4f6fe !important;
+  --blue-france-975-75-hover: #d7dffb !important;
+  --blue-france-975-75-active: #c3cffa !important;
+  --blue-france-925-125: #dee5fd !important;
+  --blue-france-925-125-hover: #b4c5fb !important;
+  --blue-france-925-125-active: #99b3f9 !important;
+  --blue-france-850-200: #bfccfb !important;
+}
+
+:root[data-fr-scheme="dark"],
+:root[data-fr-theme="dark"] {
+  /* dark theme: écume accents on the standard DSFR dark background */
+  --blue-france-sun-113-625: #465f9d !important;
+  --blue-france-sun-113-625-hover: #5b74ad !important;
+  --blue-france-sun-113-625-active: #6f8bc9 !important;
+  --blue-france-975-75: #171d2f !important;
+  --blue-france-975-75-hover: #333e5e !important;
+  --blue-france-975-75-active: #445179 !important;
+  --blue-france-925-125: #222940 !important;
+  --blue-france-925-125-hover: #424d73 !important;
+  --blue-france-925-125-active: #536190 !important;
+  --blue-france-850-200: #273962 !important;
+}
+
+/* no state logo in the header */
+.fr-header__logo {
+  display: none !important;
+}
+
+/* pills and other discreet links: no DSFR link underline/background */
+a.link-discreet {
+  text-decoration: none !important;
+  background-image: none !important;
+}
+
+/* Hanken Grotesk everywhere DSFR would use Marianne */
+body,
+.fr-badge,
+.fr-btn,
+.fr-callout,
+.fr-tag,
+.fr-tab,
+input,
+button,
+select,
+textarea {
+  font-family: "Hanken Grotesk Variable", arial, sans-serif !important;
+}

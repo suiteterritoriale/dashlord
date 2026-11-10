@@ -1,0 +1,19 @@
+# build artifacts
+node_modules/
+.next/
+out/
+dist/
+
+# editors & OS
+.DS_Store
+*.swp
+
+# local env files
+.env
+.env.*
+
+# logs
+*.log
+
+# NOTE: results/ and report.json are intentionally versioned
+# (scan data and report history are committed by the scans/report workflows)

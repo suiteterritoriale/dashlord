@@ -1,0 +1,2057 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Url > Should render empty Url 1`] = `
+<div>
+  No data available for
+  https://some.url
+</div>
+`;
+
+exports[`Url > Should render full Url 1`] = `
+[
+  <div
+    className="fr-mb-5w"
+    style={
+      {
+        "position": "relative",
+      }
+    }
+  >
+    <h1
+      className="fr-mb-2w"
+    >
+      <a
+        href="https://www.fabrique.social.gouv.fr"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        https://www.fabrique.social.gouv.fr
+      </a>
+    </h1>
+    <div
+      className="fr-mt-1w"
+    >
+      <span
+        className="fr-badge fr-badge--warning fr-badge--no-icon"
+        id="fr-badge-:r0:"
+        style={
+          {
+            "marginRight": 10,
+            "verticalAlign": "top",
+          }
+        }
+      >
+        <i
+          className="fr-icon-time-fill fr-icon--sm fr-mr-1v"
+          title="Mis à jour il y a environ 1 an"
+        />
+        environ 1 an
+      </span>
+      <a
+        className="link-discreet"
+        href="/category/fabrique"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+        title="Voir toutes les URLs de la catégorie fabrique"
+      >
+        <p
+          className="fr-badge fr-badge--success"
+          id="fr-badge-:r1:"
+          style={
+            {
+              "marginRight": 10,
+              "verticalAlign": "top",
+            }
+          }
+        >
+          fabrique
+        </p>
+      </a>
+      <a
+        className="link-discreet"
+        href="/tag/social"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+        title="Voir toutes les URLs du tag social"
+      >
+        <p
+          className="fr-badge fr-badge--info"
+          id="fr-badge-:r2:"
+          style={
+            {
+              "marginRight": 10,
+              "verticalAlign": "top",
+            }
+          }
+        >
+          social
+        </p>
+      </a>
+      <a
+        className="link-discreet"
+        href="/tag/sante"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+        title="Voir toutes les URLs du tag sante"
+      >
+        <p
+          className="fr-badge fr-badge--info"
+          id="fr-badge-:r3:"
+          style={
+            {
+              "marginRight": 10,
+              "verticalAlign": "top",
+            }
+          }
+        >
+          sante
+        </p>
+      </a>
+      <a
+        className="link-discreet"
+        href="/tag/travail"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+        title="Voir toutes les URLs du tag travail"
+      >
+        <p
+          className="fr-badge fr-badge--info"
+          id="fr-badge-:r4:"
+          style={
+            {
+              "marginRight": 10,
+              "verticalAlign": "top",
+            }
+          }
+        >
+          travail
+        </p>
+      </a>
+    </div>
+  </div>,
+  <div
+    className="fr-tabs"
+    id="fr-tabs-:r5:"
+  >
+    <ul
+      className="fr-tabs__list"
+      onKeyDownCapture={[Function]}
+      role="tablist"
+    >
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="tabpanel-:r6:-0-panel"
+          aria-selected={true}
+          className="fr-tabs__tab fr-icon-thumb-up-line fr-tabs__tab--icon-left"
+          id="tabpanel-:r6:-0"
+          onClick={[Function]}
+          role="tab"
+          tabIndex={0}
+        >
+          Bonnes pratiques
+        </button>
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="tabpanel-:r6:-1-panel"
+          aria-selected={false}
+          className="fr-tabs__tab fr-icon-time-line fr-tabs__tab--icon-left"
+          id="tabpanel-:r6:-1"
+          onClick={[Function]}
+          role="tab"
+          tabIndex={-1}
+        >
+          Disponibilité
+        </button>
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="tabpanel-:r6:-2-panel"
+          aria-selected={false}
+          className="fr-tabs__tab fr-icon-lock-line fr-tabs__tab--icon-left"
+          id="tabpanel-:r6:-2"
+          onClick={[Function]}
+          role="tab"
+          tabIndex={-1}
+        >
+          Sécurité
+        </button>
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="tabpanel-:r6:-3-panel"
+          aria-selected={false}
+          className="fr-tabs__tab fr-icon-info-line fr-tabs__tab--icon-left"
+          id="tabpanel-:r6:-3"
+          onClick={[Function]}
+          role="tab"
+          tabIndex={-1}
+        >
+          Informations
+        </button>
+      </li>
+    </ul>
+    <div
+      aria-labelledby="tabpanel-:r6:-0"
+      className="fr-tabs__panel fr-tabs__panel--selected"
+      id="tabpanel-:r6:-0-panel"
+      role="tabpanel"
+      tabIndex={0}
+    >
+      <div>
+        <div
+          id="lighthouse"
+        />
+        <div
+          className="fr-callout"
+          id="fr-callout-:r7:"
+        >
+          <h2
+            className="fr-card__title"
+          >
+            LightHouse
+          </h2>
+          <p
+            className="fr-callout__text"
+          >
+             
+            <div
+              className="fr-callout"
+              id="fr-callout-:r8:"
+            >
+              <h3
+                className="fr-card__title"
+              >
+                <div
+                  className="fr-mb-4w"
+                >
+                  https://www.fabrique.social.gouv.fr/
+                  <span
+                    className="fr-badge fr-badge--info fr-badge--no-icon"
+                    id="fr-badge-:r9:"
+                    style={
+                      {
+                        "paddingLeft": 10,
+                        "verticalAlign": "middle",
+                      }
+                    }
+                  >
+                    <i
+                      className="fr-icon-time-fill fr-icon--sm fr-mr-1v"
+                      title="Mis à jour le 22/5/2022"
+                    />
+                    environ 1 an
+                  </span>
+                </div>
+              </h3>
+              <p
+                className="fr-callout__text"
+              >
+                 
+                <div
+                  className="fr-grid-row"
+                  style={
+                    {
+                      "borderBottom": "2px solid grey",
+                    }
+                  }
+                >
+                  <div
+                    className="fr-col-sm-12 fr-col-md-6 fr-col-lg-3 fr-mb-2w"
+                  >
+                    <div
+                      style={
+                        {
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          {
+                            "background": "var(--background-contrast-grey)",
+                          }
+                        }
+                      />
+                      <div
+                        className="fr-text--lead"
+                        style={
+                          {
+                            "fontSize": "1.2em",
+                          }
+                        }
+                      >
+                        Accessibility
+                      </div>
+                      <div
+                        className="fr-mt-1w fr-text--heavy"
+                        style={
+                          {
+                            "fontSize": "2em",
+                          }
+                        }
+                      >
+                        96%
+                      </div>
+                      <div
+                        className="fr-mt-2w"
+                      >
+                        <div>
+                          <p
+                            className="fr-text--xs"
+                          >
+                            Moins de 25 % des tests d'accessibilité sont automatisables, 
+                            <strong>
+                              une expertise manuelle reste nécessaire
+                            </strong>
+                            . Ce score ne reflète pas la conformité RGAA, mais une partie des bonnes pratiques de base.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="fr-col-sm-12 fr-col-md-6 fr-col-lg-3 fr-mb-2w"
+                  >
+                    <div
+                      style={
+                        {
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          {
+                            "background": "var(--background-contrast-grey)",
+                          }
+                        }
+                      />
+                      <div
+                        className="fr-text--lead"
+                        style={
+                          {
+                            "fontSize": "1.2em",
+                          }
+                        }
+                      >
+                        Performance
+                      </div>
+                      <div
+                        className="fr-mt-1w fr-text--heavy"
+                        style={
+                          {
+                            "fontSize": "2em",
+                          }
+                        }
+                      >
+                        30%
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="fr-col-sm-12 fr-col-md-6 fr-col-lg-3 fr-mb-2w"
+                  >
+                    <div
+                      style={
+                        {
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          {
+                            "background": "var(--background-contrast-grey)",
+                          }
+                        }
+                      />
+                      <div
+                        className="fr-text--lead"
+                        style={
+                          {
+                            "fontSize": "1.2em",
+                          }
+                        }
+                      >
+                        SEO
+                      </div>
+                      <div
+                        className="fr-mt-1w fr-text--heavy"
+                        style={
+                          {
+                            "fontSize": "2em",
+                          }
+                        }
+                      >
+                        90%
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="fr-col-sm-12 fr-col-md-6 fr-col-lg-3 fr-mb-2w"
+                  >
+                    <div
+                      style={
+                        {
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          {
+                            "background": "var(--background-contrast-grey)",
+                          }
+                        }
+                      />
+                      <div
+                        className="fr-text--lead"
+                        style={
+                          {
+                            "fontSize": "1.2em",
+                          }
+                        }
+                      >
+                        Best Practices
+                      </div>
+                      <div
+                        className="fr-mt-1w fr-text--heavy"
+                        style={
+                          {
+                            "fontSize": "2em",
+                          }
+                        }
+                      >
+                        93%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="fr-grid-row"
+                >
+                  <div
+                    className="fr-col-sm-12 fr-col-md-6 fr-col-lg-3 fr-mb-2w"
+                  >
+                    <div
+                      style={
+                        {
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <div
+                        className="fr-text--lead"
+                        style={
+                          {
+                            "fontSize": "1.2em",
+                          }
+                        }
+                      >
+                        First contentful Paint
+                      </div>
+                      <div
+                        className="fr-mt-1w fr-text--heavy"
+                        style={
+                          {
+                            "fontSize": "2em",
+                          }
+                        }
+                      >
+                        1.2s
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="fr-col-sm-12 fr-col-md-6 fr-col-lg-3 fr-mb-2w"
+                  >
+                    <div
+                      style={
+                        {
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <div
+                        className="fr-text--lead"
+                        style={
+                          {
+                            "fontSize": "1.2em",
+                          }
+                        }
+                      >
+                        Time to interactive
+                      </div>
+                      <div
+                        className="fr-mt-1w fr-text--heavy"
+                        style={
+                          {
+                            "fontSize": "2em",
+                          }
+                        }
+                      >
+                        4.5s
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="fr-col-sm-12 fr-col-md-6 fr-col-lg-3 fr-mb-2w"
+                  >
+                    <div
+                      style={
+                        {
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <div
+                        className="fr-text--lead"
+                        style={
+                          {
+                            "fontSize": "1.2em",
+                          }
+                        }
+                      >
+                        Total requests
+                      </div>
+                      <div
+                        className="fr-mt-1w fr-text--heavy"
+                        style={
+                          {
+                            "fontSize": "2em",
+                          }
+                        }
+                      >
+                        54
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="fr-col-sm-12 fr-col-md-6 fr-col-lg-3 fr-mb-2w"
+                  >
+                    <div
+                      style={
+                        {
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <div
+                        className="fr-text--lead"
+                        style={
+                          {
+                            "fontSize": "1.2em",
+                          }
+                        }
+                      >
+                        Total weight
+                      </div>
+                      <div
+                        className="fr-mt-1w fr-text--heavy"
+                        style={
+                          {
+                            "fontSize": "2em",
+                          }
+                        }
+                      >
+                        7.10Mb
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 
+              </p>
+              <a
+                className="fr-btn"
+                href="/report/aHR0cHM6Ly93d3cuZmFicmlxdWUuc29jaWFsLmdvdXYuZnI=/lhr-aHR0cHM6Ly93d3cuZmFicmlxdWUuc29jaWFsLmdvdXYuZnIv.html"
+                id="fr-button-:ra:"
+                style={{}}
+                target="_blank"
+              >
+                Rapport LightHouse
+              </a>
+            </div>
+             
+          </p>
+        </div>
+      </div>
+      <div>
+        <div
+          id="thirdparties"
+        />
+        <div
+          className="fr-callout"
+          id="fr-callout-:rb:"
+        >
+          <h2
+            className="fr-card__title"
+          >
+            <div>
+              Cookies
+              <span
+                className="fr-badge fr-badge--info fr-badge--no-icon"
+                id="fr-badge-:rc:"
+                style={
+                  {
+                    "paddingLeft": 10,
+                    "verticalAlign": "middle",
+                  }
+                }
+              >
+                <i
+                  className="fr-icon-time-fill fr-icon--sm fr-mr-1v"
+                  title="Mis à jour le 22/5/2022"
+                />
+                environ 1 an
+              </span>
+            </div>
+          </h2>
+          <p
+            className="fr-callout__text"
+          >
+             
+            <p>
+              Cookies déposés par le site web au chargement de la page
+            </p>
+            <br />
+            <div
+              className="fr-table"
+              id="fr-table-:rd:"
+            >
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      name
+                    </td>
+                    <td>
+                      domain
+                    </td>
+                    <td>
+                      httpOnly
+                    </td>
+                    <td>
+                      secure
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      _pk_ses.2.6321
+                    </td>
+                    <td>
+                      www.fabrique.social.gouv.fr
+                    </td>
+                    <td>
+                      ❌
+                    </td>
+                    <td>
+                      ❌
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      _pk_id.2.6321
+                    </td>
+                    <td>
+                      www.fabrique.social.gouv.fr
+                    </td>
+                    <td>
+                      ❌
+                    </td>
+                    <td>
+                      ❌
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+             
+          </p>
+        </div>
+        <div
+          className="fr-callout"
+          id="fr-callout-:re:"
+        >
+          <h2
+            className="fr-card__title"
+          >
+            <div>
+              Scripts tiers
+              <span
+                className="fr-badge fr-badge--info fr-badge--no-icon"
+                id="fr-badge-:rf:"
+                style={
+                  {
+                    "paddingLeft": 10,
+                    "verticalAlign": "middle",
+                  }
+                }
+              >
+                <i
+                  className="fr-icon-time-fill fr-icon--sm fr-mr-1v"
+                  title="Mis à jour le 22/5/2022"
+                />
+                environ 1 an
+              </span>
+            </div>
+          </h2>
+          <p
+            className="fr-callout__text"
+          >
+             
+            <p>
+              Scripts tiers chargés par la page
+            </p>
+            <br />
+            <div
+              className="fr-table"
+              id="fr-table-:rg:"
+            >
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      flag
+                    </td>
+                    <td>
+                      country
+                    </td>
+                    <td>
+                      hostname
+                    </td>
+                    <td>
+                      ip
+                    </td>
+                    <td>
+                      city
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <svg
+                        style={
+                          {
+                            "width": 60,
+                          }
+                        }
+                        viewBox="0 0 513 342"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>
+                          France
+                        </title>
+                        <path
+                          d="M0 0h513v342H0z"
+                          fill="#FFF"
+                        />
+                        <path
+                          d="M0 0h171v342H0z"
+                          fill="#0052B4"
+                        />
+                        <path
+                          d="M342 0h171v342H342z"
+                          fill="#D80027"
+                        />
+                      </svg>
+                    </td>
+                    <td>
+                      France
+                    </td>
+                    <td>
+                      www.fabrique.social.gouv.fr
+                    </td>
+                    <td>
+                      20.74.14.77
+                    </td>
+                    <td>
+                      Paris
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+             
+          </p>
+        </div>
+      </div>
+      <div>
+        <div
+          id="stats"
+        />
+      </div>
+      <div>
+        <div
+          id="declaration-a11y"
+        />
+        <div
+          className="fr-callout"
+          id="fr-callout-:rh:"
+        >
+          <h2
+            className="fr-card__title"
+          >
+            Déclaration de mise en accessibilité
+          </h2>
+          <p
+            className="fr-callout__text"
+          >
+             
+            <p>
+              Une mention de conformité pointant sur une déclaration d'accessibilité est obligatoire sur les sites et applications de l'état
+            </p>
+            <br />
+            <div
+              className="fr-alert fr-alert--info"
+              id="fr-alert-:ri:"
+            >
+              <h3
+                className="fr-alert__title"
+              >
+                non-conforme
+              </h3>
+              <div>
+                La mention a bien été detectée : Non conforme
+              </div>
+            </div>
+            <div
+              className="fr-alert fr-alert--success"
+              id="fr-alert-:rj:"
+            >
+              <h3
+                className="fr-alert__title"
+              />
+              <div>
+                La déclaration est disponible sur :
+                 
+                <a
+                  href="https://www.fabrique.social.gouv.fr/declaration-accessibilite"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  https://www.fabrique.social.gouv.fr/declaration-accessibilite
+                </a>
+              </div>
+            </div>
+             
+          </p>
+        </div>
+      </div>
+      <div>
+        <div
+          id="declaration-rgpd"
+        />
+        <div
+          className="fr-callout"
+          id="fr-callout-:rk:"
+        >
+          <h2
+            className="fr-card__title"
+          >
+            Mentions légales
+          </h2>
+          <p
+            className="fr-callout__text"
+          >
+             
+            <p>
+              Les mentions légales sont une page obligatoire qui présente les personnes chargées de la plateforme
+            </p>
+            <br />
+            <div
+              className="fr-alert fr-alert--success"
+              id="fr-alert-:rl:"
+            >
+              <h3
+                className="fr-alert__title"
+              >
+                declaration-ok
+              </h3>
+              <div>
+                Votre déclaration a bien été détectée sur :
+                 
+                <a
+                  href="https://www.fabrique.social.gouv.fr/mentions-legales/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  https://www.fabrique.social.gouv.fr/mentions-legales/
+                </a>
+              </div>
+            </div>
+             
+          </p>
+        </div>
+        <div
+          className="fr-callout"
+          id="fr-callout-:rm:"
+        >
+          <h2
+            className="fr-card__title"
+          >
+            Politique de confidentialité
+          </h2>
+          <p
+            className="fr-callout__text"
+          >
+             
+            <p>
+              La politique de confidentialité présente aux utilisateurs les traitements de données personnelles et les éventuelles trackers
+            </p>
+            <br />
+            <div
+              className="fr-alert fr-alert--error"
+              id="fr-alert-:rn:"
+            >
+              <h3
+                className="fr-alert__title"
+              >
+                Erreur
+              </h3>
+              <div>
+                Pas de déclaration détectée. 
+              </div>
+            </div>
+            <div
+              className="fr-alert fr-alert--error"
+              id="fr-alert-:ro:"
+            >
+              <h3
+                className="fr-alert__title"
+              >
+                Déclaration incomplète
+              </h3>
+              <div>
+                Rendez vous sur
+                 
+                <a
+                  href="https://mattermost.incubateur.net/betagouv/channels/domaine-juridique"
+                  target="_blank"
+                >
+                  https://mattermost.incubateur.net/betagouv/channels/domaine-juridique
+                </a>
+                 
+              </div>
+            </div>
+             
+          </p>
+        </div>
+      </div>
+      <div>
+        <div
+          id="404"
+        />
+        <div
+          className="fr-callout"
+          id="fr-callout-:rp:"
+        >
+          <h2
+            className="fr-card__title"
+          >
+            Erreurs 404
+          </h2>
+          <p
+            className="fr-callout__text"
+          >
+             
+            <div
+              className="fr-table"
+              id="fr-table-:rq:"
+            >
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      destination
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      https://www.fabrique.social.gouv.fr/startups/code-du-travail-numerique/kickoff/genese
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      https://www.fabrique.social.gouv.fr/faq/beta.gouv.fr
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      https://www.fabrique.social.gouv.fr/startups/enfants-du-spectacle/
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      https://www.fabrique.social.gouv.fr/startups/Domifa/
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      https://www.fabrique.social.gouv.fr/startups/transition-collective/
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      https://www.fabrique.social.gouv.fr/feed.xml
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      https://www.fabrique.social.gouv.fr/startups/code-du-travail-numerique/sdr
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      https://www.fabrique.social.gouv.fr/startups/ramses/
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+             
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Url > Should render full Url with screenshot 1`] = `
+[
+  <div
+    className="fr-mb-5w"
+    style={
+      {
+        "position": "relative",
+      }
+    }
+  >
+    <h1
+      className="fr-mb-2w"
+    >
+      <a
+        href="https://www.fabrique.social.gouv.fr"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        https://www.fabrique.social.gouv.fr
+      </a>
+    </h1>
+    <div
+      className="fr-mt-1w"
+    >
+      <span
+        className="fr-badge fr-badge--warning fr-badge--no-icon"
+        id="fr-badge-:rr:"
+        style={
+          {
+            "marginRight": 10,
+            "verticalAlign": "top",
+          }
+        }
+      >
+        <i
+          className="fr-icon-time-fill fr-icon--sm fr-mr-1v"
+          title="Mis à jour il y a environ 1 an"
+        />
+        environ 1 an
+      </span>
+      <a
+        className="link-discreet"
+        href="/category/fabrique"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+        title="Voir toutes les URLs de la catégorie fabrique"
+      >
+        <p
+          className="fr-badge fr-badge--success"
+          id="fr-badge-:rs:"
+          style={
+            {
+              "marginRight": 10,
+              "verticalAlign": "top",
+            }
+          }
+        >
+          fabrique
+        </p>
+      </a>
+      <a
+        className="link-discreet"
+        href="/tag/social"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+        title="Voir toutes les URLs du tag social"
+      >
+        <p
+          className="fr-badge fr-badge--info"
+          id="fr-badge-:rt:"
+          style={
+            {
+              "marginRight": 10,
+              "verticalAlign": "top",
+            }
+          }
+        >
+          social
+        </p>
+      </a>
+      <a
+        className="link-discreet"
+        href="/tag/sante"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+        title="Voir toutes les URLs du tag sante"
+      >
+        <p
+          className="fr-badge fr-badge--info"
+          id="fr-badge-:ru:"
+          style={
+            {
+              "marginRight": 10,
+              "verticalAlign": "top",
+            }
+          }
+        >
+          sante
+        </p>
+      </a>
+      <a
+        className="link-discreet"
+        href="/tag/travail"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+        title="Voir toutes les URLs du tag travail"
+      >
+        <p
+          className="fr-badge fr-badge--info"
+          id="fr-badge-:rv:"
+          style={
+            {
+              "marginRight": 10,
+              "verticalAlign": "top",
+            }
+          }
+        >
+          travail
+        </p>
+      </a>
+    </div>
+    <img
+      alt="Copie d'écran de https://www.fabrique.social.gouv.fr"
+      className="_screenshotImg_195a1c"
+      src="/report/aHR0cHM6Ly93d3cuZmFicmlxdWUuc29jaWFsLmdvdXYuZnI=/screenshot.jpeg"
+    />
+  </div>,
+  <div
+    className="fr-tabs"
+    id="fr-tabs-:r10:"
+  >
+    <ul
+      className="fr-tabs__list"
+      onKeyDownCapture={[Function]}
+      role="tablist"
+    >
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="tabpanel-:r11:-0-panel"
+          aria-selected={true}
+          className="fr-tabs__tab fr-icon-thumb-up-line fr-tabs__tab--icon-left"
+          id="tabpanel-:r11:-0"
+          onClick={[Function]}
+          role="tab"
+          tabIndex={0}
+        >
+          Bonnes pratiques
+        </button>
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="tabpanel-:r11:-1-panel"
+          aria-selected={false}
+          className="fr-tabs__tab fr-icon-time-line fr-tabs__tab--icon-left"
+          id="tabpanel-:r11:-1"
+          onClick={[Function]}
+          role="tab"
+          tabIndex={-1}
+        >
+          Disponibilité
+        </button>
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="tabpanel-:r11:-2-panel"
+          aria-selected={false}
+          className="fr-tabs__tab fr-icon-lock-line fr-tabs__tab--icon-left"
+          id="tabpanel-:r11:-2"
+          onClick={[Function]}
+          role="tab"
+          tabIndex={-1}
+        >
+          Sécurité
+        </button>
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="tabpanel-:r11:-3-panel"
+          aria-selected={false}
+          className="fr-tabs__tab fr-icon-info-line fr-tabs__tab--icon-left"
+          id="tabpanel-:r11:-3"
+          onClick={[Function]}
+          role="tab"
+          tabIndex={-1}
+        >
+          Informations
+        </button>
+      </li>
+    </ul>
+    <div
+      aria-labelledby="tabpanel-:r11:-0"
+      className="fr-tabs__panel fr-tabs__panel--selected"
+      id="tabpanel-:r11:-0-panel"
+      role="tabpanel"
+      tabIndex={0}
+    >
+      <div>
+        <div
+          id="lighthouse"
+        />
+        <div
+          className="fr-callout"
+          id="fr-callout-:r12:"
+        >
+          <h2
+            className="fr-card__title"
+          >
+            LightHouse
+          </h2>
+          <p
+            className="fr-callout__text"
+          >
+             
+            <div
+              className="fr-callout"
+              id="fr-callout-:r13:"
+            >
+              <h3
+                className="fr-card__title"
+              >
+                <div
+                  className="fr-mb-4w"
+                >
+                  https://www.fabrique.social.gouv.fr/
+                  <span
+                    className="fr-badge fr-badge--info fr-badge--no-icon"
+                    id="fr-badge-:r14:"
+                    style={
+                      {
+                        "paddingLeft": 10,
+                        "verticalAlign": "middle",
+                      }
+                    }
+                  >
+                    <i
+                      className="fr-icon-time-fill fr-icon--sm fr-mr-1v"
+                      title="Mis à jour le 22/5/2022"
+                    />
+                    environ 1 an
+                  </span>
+                </div>
+              </h3>
+              <p
+                className="fr-callout__text"
+              >
+                 
+                <div
+                  className="fr-grid-row"
+                  style={
+                    {
+                      "borderBottom": "2px solid grey",
+                    }
+                  }
+                >
+                  <div
+                    className="fr-col-sm-12 fr-col-md-6 fr-col-lg-3 fr-mb-2w"
+                  >
+                    <div
+                      style={
+                        {
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          {
+                            "background": "var(--background-contrast-grey)",
+                          }
+                        }
+                      />
+                      <div
+                        className="fr-text--lead"
+                        style={
+                          {
+                            "fontSize": "1.2em",
+                          }
+                        }
+                      >
+                        Accessibility
+                      </div>
+                      <div
+                        className="fr-mt-1w fr-text--heavy"
+                        style={
+                          {
+                            "fontSize": "2em",
+                          }
+                        }
+                      >
+                        96%
+                      </div>
+                      <div
+                        className="fr-mt-2w"
+                      >
+                        <div>
+                          <p
+                            className="fr-text--xs"
+                          >
+                            Moins de 25 % des tests d'accessibilité sont automatisables, 
+                            <strong>
+                              une expertise manuelle reste nécessaire
+                            </strong>
+                            . Ce score ne reflète pas la conformité RGAA, mais une partie des bonnes pratiques de base.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="fr-col-sm-12 fr-col-md-6 fr-col-lg-3 fr-mb-2w"
+                  >
+                    <div
+                      style={
+                        {
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          {
+                            "background": "var(--background-contrast-grey)",
+                          }
+                        }
+                      />
+                      <div
+                        className="fr-text--lead"
+                        style={
+                          {
+                            "fontSize": "1.2em",
+                          }
+                        }
+                      >
+                        Performance
+                      </div>
+                      <div
+                        className="fr-mt-1w fr-text--heavy"
+                        style={
+                          {
+                            "fontSize": "2em",
+                          }
+                        }
+                      >
+                        30%
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="fr-col-sm-12 fr-col-md-6 fr-col-lg-3 fr-mb-2w"
+                  >
+                    <div
+                      style={
+                        {
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          {
+                            "background": "var(--background-contrast-grey)",
+                          }
+                        }
+                      />
+                      <div
+                        className="fr-text--lead"
+                        style={
+                          {
+                            "fontSize": "1.2em",
+                          }
+                        }
+                      >
+                        SEO
+                      </div>
+                      <div
+                        className="fr-mt-1w fr-text--heavy"
+                        style={
+                          {
+                            "fontSize": "2em",
+                          }
+                        }
+                      >
+                        90%
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="fr-col-sm-12 fr-col-md-6 fr-col-lg-3 fr-mb-2w"
+                  >
+                    <div
+                      style={
+                        {
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          {
+                            "background": "var(--background-contrast-grey)",
+                          }
+                        }
+                      />
+                      <div
+                        className="fr-text--lead"
+                        style={
+                          {
+                            "fontSize": "1.2em",
+                          }
+                        }
+                      >
+                        Best Practices
+                      </div>
+                      <div
+                        className="fr-mt-1w fr-text--heavy"
+                        style={
+                          {
+                            "fontSize": "2em",
+                          }
+                        }
+                      >
+                        93%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="fr-grid-row"
+                >
+                  <div
+                    className="fr-col-sm-12 fr-col-md-6 fr-col-lg-3 fr-mb-2w"
+                  >
+                    <div
+                      style={
+                        {
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <div
+                        className="fr-text--lead"
+                        style={
+                          {
+                            "fontSize": "1.2em",
+                          }
+                        }
+                      >
+                        First contentful Paint
+                      </div>
+                      <div
+                        className="fr-mt-1w fr-text--heavy"
+                        style={
+                          {
+                            "fontSize": "2em",
+                          }
+                        }
+                      >
+                        1.2s
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="fr-col-sm-12 fr-col-md-6 fr-col-lg-3 fr-mb-2w"
+                  >
+                    <div
+                      style={
+                        {
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <div
+                        className="fr-text--lead"
+                        style={
+                          {
+                            "fontSize": "1.2em",
+                          }
+                        }
+                      >
+                        Time to interactive
+                      </div>
+                      <div
+                        className="fr-mt-1w fr-text--heavy"
+                        style={
+                          {
+                            "fontSize": "2em",
+                          }
+                        }
+                      >
+                        4.5s
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="fr-col-sm-12 fr-col-md-6 fr-col-lg-3 fr-mb-2w"
+                  >
+                    <div
+                      style={
+                        {
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <div
+                        className="fr-text--lead"
+                        style={
+                          {
+                            "fontSize": "1.2em",
+                          }
+                        }
+                      >
+                        Total requests
+                      </div>
+                      <div
+                        className="fr-mt-1w fr-text--heavy"
+                        style={
+                          {
+                            "fontSize": "2em",
+                          }
+                        }
+                      >
+                        54
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="fr-col-sm-12 fr-col-md-6 fr-col-lg-3 fr-mb-2w"
+                  >
+                    <div
+                      style={
+                        {
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <div
+                        className="fr-text--lead"
+                        style={
+                          {
+                            "fontSize": "1.2em",
+                          }
+                        }
+                      >
+                        Total weight
+                      </div>
+                      <div
+                        className="fr-mt-1w fr-text--heavy"
+                        style={
+                          {
+                            "fontSize": "2em",
+                          }
+                        }
+                      >
+                        7.10Mb
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 
+              </p>
+              <a
+                className="fr-btn"
+                href="/report/aHR0cHM6Ly93d3cuZmFicmlxdWUuc29jaWFsLmdvdXYuZnI=/lhr-aHR0cHM6Ly93d3cuZmFicmlxdWUuc29jaWFsLmdvdXYuZnIv.html"
+                id="fr-button-:r15:"
+                style={{}}
+                target="_blank"
+              >
+                Rapport LightHouse
+              </a>
+            </div>
+             
+          </p>
+        </div>
+      </div>
+      <div>
+        <div
+          id="thirdparties"
+        />
+        <div
+          className="fr-callout"
+          id="fr-callout-:r16:"
+        >
+          <h2
+            className="fr-card__title"
+          >
+            <div>
+              Cookies
+              <span
+                className="fr-badge fr-badge--info fr-badge--no-icon"
+                id="fr-badge-:r17:"
+                style={
+                  {
+                    "paddingLeft": 10,
+                    "verticalAlign": "middle",
+                  }
+                }
+              >
+                <i
+                  className="fr-icon-time-fill fr-icon--sm fr-mr-1v"
+                  title="Mis à jour le 22/5/2022"
+                />
+                environ 1 an
+              </span>
+            </div>
+          </h2>
+          <p
+            className="fr-callout__text"
+          >
+             
+            <p>
+              Cookies déposés par le site web au chargement de la page
+            </p>
+            <br />
+            <div
+              className="fr-table"
+              id="fr-table-:r18:"
+            >
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      name
+                    </td>
+                    <td>
+                      domain
+                    </td>
+                    <td>
+                      httpOnly
+                    </td>
+                    <td>
+                      secure
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      _pk_ses.2.6321
+                    </td>
+                    <td>
+                      www.fabrique.social.gouv.fr
+                    </td>
+                    <td>
+                      ❌
+                    </td>
+                    <td>
+                      ❌
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      _pk_id.2.6321
+                    </td>
+                    <td>
+                      www.fabrique.social.gouv.fr
+                    </td>
+                    <td>
+                      ❌
+                    </td>
+                    <td>
+                      ❌
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+             
+          </p>
+        </div>
+        <div
+          className="fr-callout"
+          id="fr-callout-:r19:"
+        >
+          <h2
+            className="fr-card__title"
+          >
+            <div>
+              Scripts tiers
+              <span
+                className="fr-badge fr-badge--info fr-badge--no-icon"
+                id="fr-badge-:r1a:"
+                style={
+                  {
+                    "paddingLeft": 10,
+                    "verticalAlign": "middle",
+                  }
+                }
+              >
+                <i
+                  className="fr-icon-time-fill fr-icon--sm fr-mr-1v"
+                  title="Mis à jour le 22/5/2022"
+                />
+                environ 1 an
+              </span>
+            </div>
+          </h2>
+          <p
+            className="fr-callout__text"
+          >
+             
+            <p>
+              Scripts tiers chargés par la page
+            </p>
+            <br />
+            <div
+              className="fr-table"
+              id="fr-table-:r1b:"
+            >
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      flag
+                    </td>
+                    <td>
+                      country
+                    </td>
+                    <td>
+                      hostname
+                    </td>
+                    <td>
+                      ip
+                    </td>
+                    <td>
+                      city
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <svg
+                        style={
+                          {
+                            "width": 60,
+                          }
+                        }
+                        viewBox="0 0 513 342"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>
+                          France
+                        </title>
+                        <path
+                          d="M0 0h513v342H0z"
+                          fill="#FFF"
+                        />
+                        <path
+                          d="M0 0h171v342H0z"
+                          fill="#0052B4"
+                        />
+                        <path
+                          d="M342 0h171v342H342z"
+                          fill="#D80027"
+                        />
+                      </svg>
+                    </td>
+                    <td>
+                      France
+                    </td>
+                    <td>
+                      www.fabrique.social.gouv.fr
+                    </td>
+                    <td>
+                      20.74.14.77
+                    </td>
+                    <td>
+                      Paris
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+             
+          </p>
+        </div>
+      </div>
+      <div>
+        <div
+          id="stats"
+        />
+      </div>
+      <div>
+        <div
+          id="declaration-a11y"
+        />
+        <div
+          className="fr-callout"
+          id="fr-callout-:r1c:"
+        >
+          <h2
+            className="fr-card__title"
+          >
+            Déclaration de mise en accessibilité
+          </h2>
+          <p
+            className="fr-callout__text"
+          >
+             
+            <p>
+              Une mention de conformité pointant sur une déclaration d'accessibilité est obligatoire sur les sites et applications de l'état
+            </p>
+            <br />
+            <div
+              className="fr-alert fr-alert--info"
+              id="fr-alert-:r1d:"
+            >
+              <h3
+                className="fr-alert__title"
+              >
+                non-conforme
+              </h3>
+              <div>
+                La mention a bien été detectée : Non conforme
+              </div>
+            </div>
+            <div
+              className="fr-alert fr-alert--success"
+              id="fr-alert-:r1e:"
+            >
+              <h3
+                className="fr-alert__title"
+              />
+              <div>
+                La déclaration est disponible sur :
+                 
+                <a
+                  href="https://www.fabrique.social.gouv.fr/declaration-accessibilite"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  https://www.fabrique.social.gouv.fr/declaration-accessibilite
+                </a>
+              </div>
+            </div>
+             
+          </p>
+        </div>
+      </div>
+      <div>
+        <div
+          id="declaration-rgpd"
+        />
+        <div
+          className="fr-callout"
+          id="fr-callout-:r1f:"
+        >
+          <h2
+            className="fr-card__title"
+          >
+            Mentions légales
+          </h2>
+          <p
+            className="fr-callout__text"
+          >
+             
+            <p>
+              Les mentions légales sont une page obligatoire qui présente les personnes chargées de la plateforme
+            </p>
+            <br />
+            <div
+              className="fr-alert fr-alert--success"
+              id="fr-alert-:r1g:"
+            >
+              <h3
+                className="fr-alert__title"
+              >
+                declaration-ok
+              </h3>
+              <div>
+                Votre déclaration a bien été détectée sur :
+                 
+                <a
+                  href="https://www.fabrique.social.gouv.fr/mentions-legales/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  https://www.fabrique.social.gouv.fr/mentions-legales/
+                </a>
+              </div>
+            </div>
+             
+          </p>
+        </div>
+        <div
+          className="fr-callout"
+          id="fr-callout-:r1h:"
+        >
+          <h2
+            className="fr-card__title"
+          >
+            Politique de confidentialité
+          </h2>
+          <p
+            className="fr-callout__text"
+          >
+             
+            <p>
+              La politique de confidentialité présente aux utilisateurs les traitements de données personnelles et les éventuelles trackers
+            </p>
+            <br />
+            <div
+              className="fr-alert fr-alert--error"
+              id="fr-alert-:r1i:"
+            >
+              <h3
+                className="fr-alert__title"
+              >
+                Erreur
+              </h3>
+              <div>
+                Pas de déclaration détectée. 
+              </div>
+            </div>
+            <div
+              className="fr-alert fr-alert--error"
+              id="fr-alert-:r1j:"
+            >
+              <h3
+                className="fr-alert__title"
+              >
+                Déclaration incomplète
+              </h3>
+              <div>
+                Rendez vous sur
+                 
+                <a
+                  href="https://mattermost.incubateur.net/betagouv/channels/domaine-juridique"
+                  target="_blank"
+                >
+                  https://mattermost.incubateur.net/betagouv/channels/domaine-juridique
+                </a>
+                 
+              </div>
+            </div>
+             
+          </p>
+        </div>
+      </div>
+      <div>
+        <div
+          id="404"
+        />
+        <div
+          className="fr-callout"
+          id="fr-callout-:r1k:"
+        >
+          <h2
+            className="fr-card__title"
+          >
+            Erreurs 404
+          </h2>
+          <p
+            className="fr-callout__text"
+          >
+             
+            <div
+              className="fr-table"
+              id="fr-table-:r1l:"
+            >
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      destination
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      https://www.fabrique.social.gouv.fr/startups/code-du-travail-numerique/kickoff/genese
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      https://www.fabrique.social.gouv.fr/faq/beta.gouv.fr
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      https://www.fabrique.social.gouv.fr/startups/enfants-du-spectacle/
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      https://www.fabrique.social.gouv.fr/startups/Domifa/
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      https://www.fabrique.social.gouv.fr/startups/transition-collective/
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      https://www.fabrique.social.gouv.fr/feed.xml
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      https://www.fabrique.social.gouv.fr/startups/code-du-travail-numerique/sdr
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      https://www.fabrique.social.gouv.fr/startups/ramses/
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+             
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

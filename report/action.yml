@@ -1,0 +1,44 @@
+name: "DashLord report Action"
+description: "Generate a dashlord report"
+
+inputs:
+  base-path:
+    description: "base-path for the next.js build. see https://nextjs.org/docs/api-reference/next.config.js/basepath"
+    required: false
+
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/setup-node@v3
+      with:
+        node-version: "20"
+    - name: Build
+      id: build
+      shell: bash
+      env:
+        SKIP_PREFLIGHT_CHECK: "true"
+      run: |
+        export REPOSITORY_NAME=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')
+        export DASHLORD_REPO_PATH=${{ github.workspace }};
+        export NEXT_PUBLIC_REPOSITORY_URL=$(echo 'https://github.com/${{ github.repository }}')
+        export NEXT_PUBLIC_BASE_PATH=$([[ -n "${{ inputs.base-path }}" ]] && echo "${{ inputs.base-path }}" || echo "")
+
+        echo "REPOSITORY_NAME: $REPOSITORY_NAME"
+        echo "REPOSITORY_URL: $REPOSITORY_URL"
+        echo "DASHLORD_REPO_PATH: $DASHLORD_REPO_PATH"
+        echo "NEXT_PUBLIC_BASE_PATH: $NEXT_PUBLIC_BASE_PATH"
+
+        cd ${{ github.action_path }}
+        yarn
+        # this creates config.json, report.json and trends.json to build the website
+        node src
+        cd www
+        yarn
+        export NODE_OPTIONS=--max-old-space-size=8192 # prevents heap out of memory ?
+        CI=false yarn build
+        # prevent gh-pages jekyll build
+        touch out/.nojekyll
+        # save report in workspace for artifact
+        cp src/report.json ${{ github.workspace }}/report.json
+        # save the build for gh-pages publication
+        mv out ${{ github.workspace }}/build

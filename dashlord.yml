@@ -1,0 +1,57 @@
+title: La Suite territoriale - DashLord
+description: Monitoring of repository best practices
+entity: Suite territoriale
+footer: ""
+marianne: false
+seo: false
+tools:
+  repocheks: true
+urls:
+  - url: https://github.com/suitenumerique/messages
+    category: core
+    repositories:
+      - suitenumerique/messages
+  - url: https://github.com/suitenumerique/calendars
+    category: core
+    repositories:
+      - suitenumerique/calendars
+  - url: https://github.com/suitenumerique/drive
+    category: core
+    repositories:
+      - suitenumerique/drive
+  - url: https://github.com/suitenumerique/transfers
+    category: core
+    repositories:
+      - suitenumerique/transfers
+  - url: https://github.com/suiteterritoriale/deploycenter
+    category: core
+    repositories:
+      - suiteterritoriale/deploycenter
+  - url: https://github.com/suitenumerique/file-scanner
+    category: core
+    repositories:
+      - suitenumerique/file-scanner
+  - url: https://github.com/suitenumerique/conversations
+    category: extras
+    repositories:
+      - suitenumerique/conversations
+  - url: https://github.com/suitenumerique/docs
+    category: extras
+    repositories:
+      - suitenumerique/docs
+  - url: https://github.com/suitenumerique/meet
+    category: extras
+    repositories:
+      - suitenumerique/meet
+  - url: https://github.com/suitenumerique/projects
+    category: extras
+    repositories:
+      - suitenumerique/projects
+  - url: https://github.com/suiteterritoriale/home
+    category: extras
+    repositories:
+      - suiteterritoriale/home
+  - url: https://github.com/suiteterritoriale/helpcenter
+    category: extras
+    repositories:
+      - suiteterritoriale/helpcenter

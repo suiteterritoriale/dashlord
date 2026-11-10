@@ -1,0 +1,57 @@
+name: DashLord report
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["DashLord scans"]
+    branches: [main]
+    types:
+      - completed
+
+# allow only one concurrent report action
+concurrency:
+  cancel-in-progress: true
+  group: report
+
+# custom domain for the published site (empty = https://<org>.github.io/<repo>/,
+# set to serve at the domain root and keep the CNAME file across deploys)
+env:
+  CUSTOM_DOMAIN: dashlord.suite.anct.gouv.fr
+
+jobs:
+  website:
+    runs-on: ubuntu-latest
+    name: Website
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/cache@v5
+        with:
+          path: "**/node_modules"
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      # build the report with the customized dashlord report app (./report);
+      # no base-path: the site is served at the root of the custom domain
+      - id: dashlord-report
+        uses: ./report
+
+      # save full report for history
+      - uses: EndBug/add-and-commit@v7
+        with:
+          add: '["report.json"]'
+          default_author: "github_actions"
+          message: "chore: report update"
+
+      # keep the GitHub Pages custom domain across deploys
+      - name: CNAME
+        if: ${{ env.CUSTOM_DOMAIN != '' }}
+        run: echo "$CUSTOM_DOMAIN" > build/CNAME
+
+      # deploy build to gh-pages
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.9
+        with:
+          branch: gh-pages
+          folder: build

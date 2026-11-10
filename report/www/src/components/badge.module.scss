@@ -1,0 +1,31 @@
+.success,
+.info,
+.warning,
+.danger {
+    display: inline-block;
+    cursor: pointer;
+    padding: 4px 8px;
+    color: white;
+    min-width: 60px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.success, .success:hover {
+    background-color: var(--success) !important;
+}
+
+.info, .info:hover {
+    background-color: var(--info) !important;
+}
+
+.warning, .warning:hover {
+    background-color: var(--warning) !important;
+}
+
+.danger, .danger:hover {
+    background-color: var(--error) !important;
+}

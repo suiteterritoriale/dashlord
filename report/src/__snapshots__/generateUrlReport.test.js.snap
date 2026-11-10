@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generateUrlReport should allow empty/invalid reports 1`] = `
+Object {
+  "404": null,
+  "betagouv": null,
+  "budget_page": null,
+  "codescan": Object {
+    "report": "codescanalerts.json",
+    "totalCount": 42,
+  },
+  "declaration-a11y": null,
+  "declaration-rgpd": null,
+  "dependabot": null,
+  "dsfr": null,
+  "ecoindex": null,
+  "github_repository": null,
+  "http": null,
+  "lhr": null,
+  "nmap": null,
+  "nuclei": Array [],
+  "screenshot": false,
+  "sonarcloud": null,
+  "stats": null,
+  "summary": Object {
+    "codescanCount": 42,
+    "codescanGrade": undefined,
+    "declaration-a11y": undefined,
+    "declaration-rgpd": undefined,
+  },
+  "testssl": null,
+  "thirdparties": null,
+  "updownio": null,
+  "url": "https://www.test.com",
+  "wappalyzer": Object {
+    "report": "wappalyzer.json",
+  },
+  "zap": null,
+}
+`;
+
+exports[`generateUrlReport should generate latest report for a valid url 1`] = `
+Object {
+  "404": Array [
+    1,
+    2,
+    3,
+  ],
+  "betagouv": null,
+  "budget_page": Object {
+    "report": "budget_page.json",
+  },
+  "codescan": Object {
+    "report": "codescanalerts.json",
+    "totalCount": 42,
+  },
+  "declaration-a11y": Object {
+    "mention": "Accessibilité : partiellement conforme",
+  },
+  "declaration-rgpd": Array [
+    Object {
+      "declarationUrl": "https://declaration-ml.test",
+      "maxScore": 4,
+      "score": 3,
+      "slug": "ml",
+    },
+    Object {
+      "declarationUrl": "https://declaration-pc.test",
+      "maxScore": 4,
+      "score": 3,
+      "slug": "pc",
+    },
+  ],
+  "dependabot": Object {
+    "report": "dependabotalerts.json",
+  },
+  "dsfr": null,
+  "ecoindex": null,
+  "github_repository": Object {
+    "report": "github_repository.json",
+  },
+  "http": Object {
+    "report": "http.json",
+  },
+  "lhr": Array [
+    Object {
+      "audits": Object {},
+      "categories": Object {},
+      "fetchTime": undefined,
+      "finalUrl": undefined,
+      "requestedUrl": undefined,
+      "runWarnings": undefined,
+    },
+  ],
+  "nmap": Object {
+    "report": "nmap.json",
+  },
+  "nuclei": Array [],
+  "screenshot": false,
+  "sonarcloud": Array [
+    Object {
+      "repo": "sensgithub/eHospital",
+      "result": Object {
+        "analysisDate": "2023-04-03T01:37:49+0200",
+        "commit": Object {
+          "date": "2023-04-03T01:37:44+0200",
+          "message": "Delete codeql.yml",
+          "sha": "28f2cf43a343f5215ffa1052d9c659333626a2a4",
+        },
+        "isMain": true,
+        "name": "main",
+        "status": Object {
+          "bugs": 174,
+          "codeSmells": 2198,
+          "vulnerabilities": 23,
+        },
+        "type": "LONG",
+      },
+    },
+    Object {
+      "repo": "zabbix/zabbix",
+      "result": Object {
+        "analysisDate": "2023-04-02T02:17:15+0200",
+        "commit": Object {
+          "date": "2023-03-31T21:45:03+0200",
+          "message": ".......... [ZBX-1357] automatic update of translation strings",
+          "sha": "f9d2062ed6560094ad6f4c8772cd82b72328cd83",
+        },
+        "isMain": true,
+        "name": "master",
+        "status": Object {
+          "bugs": 73,
+          "codeSmells": 13669,
+          "qualityGateStatus": "ERROR",
+          "vulnerabilities": 26,
+        },
+        "type": "LONG",
+      },
+    },
+  ],
+  "stats": Object {
+    "report": "stats.json",
+  },
+  "summary": Object {
+    "404": 3,
+    "codescanCount": 42,
+    "codescanGrade": undefined,
+    "declaration-a11y": "F",
+    "declaration-rgpd-ml": "D",
+    "declaration-rgpd-pc": "D",
+    "sonarcloudGrade": "F",
+  },
+  "testssl": Array [
+    Object {
+      "report": "testssl.json",
+    },
+  ],
+  "thirdparties": Object {
+    "report": "thirdparties.json",
+  },
+  "updownio": Object {
+    "report": "updownio.json",
+  },
+  "url": "https://www.test.com",
+  "wappalyzer": Object {
+    "report": "wappalyzer.json",
+  },
+  "zap": Object {
+    "report": "zap.json",
+    "site": undefined,
+  },
+}
+`;

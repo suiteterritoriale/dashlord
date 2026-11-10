@@ -1,0 +1,116 @@
+{
+  "repository": "suitenumerique/drive",
+  "url": "https://github.com/suitenumerique/drive",
+  "branch": "main",
+  "scan_date": "2026-11-10T08:44:22.841Z",
+  "error": null,
+  "security_md": {
+    "present": true,
+    "path": "SECURITY.md"
+  },
+  "backend": {
+    "dockerfile": "Dockerfile",
+    "runtime": {
+      "language": "python",
+      "version": "3.13.17",
+      "strategy": "python-base-image",
+      "source": "Dockerfile"
+    },
+    "distroless": {
+      "supported": false,
+      "images": []
+    },
+    "healthcheck": {
+      "present": false,
+      "count": 0
+    },
+    "runs_as_non_root": {
+      "supported": true,
+      "evidence": "USER ${DOCKER_USER}"
+    }
+  },
+  "frontend": {
+    "dockerfile": "src/frontend/Dockerfile",
+    "caddy": false,
+    "server": "nginx",
+    "entrypoint": "ENTRYPOINT [ \"/usr/local/bin/entrypoint\" ]",
+    "distroless": {
+      "supported": false,
+      "images": []
+    },
+    "monolith": false
+  },
+  "ui_components": [
+    {
+      "name": "@gouvfr-lasuite/ui-components",
+      "spec": "1.5.0",
+      "source": "src/frontend/apps/drive/package.json"
+    }
+  ],
+  "dependencies": {
+    "python": {
+      "django": "5.2.17",
+      "django-lasuite": "0.1.0",
+      "package_manager": {
+        "name": "uv",
+        "version": "0.13.4"
+      }
+    },
+    "node": {
+      "next": "15.5.27",
+      "typescript": "5.4.5",
+      "bundler": {
+        "name": "next",
+        "version": "15.5.27"
+      },
+      "router": {
+        "name": "next",
+        "version": "15.5.27"
+      },
+      "package_manager": {
+        "name": "yarn",
+        "version": "1"
+      }
+    }
+  },
+  "base_images": {
+    "pinned": false,
+    "images": [
+      {
+        "dockerfile": "Dockerfile",
+        "image": "ghcr.io/astral-sh/uv:0.13.4",
+        "digest_pinned": false,
+        "stage": "uv"
+      },
+      {
+        "dockerfile": "Dockerfile",
+        "image": "python:3.13.17-alpine",
+        "digest_pinned": false,
+        "stage": "base"
+      },
+      {
+        "dockerfile": "Dockerfile",
+        "image": "node:22",
+        "digest_pinned": false,
+        "stage": "mail-builder"
+      },
+      {
+        "dockerfile": "src/frontend/Dockerfile",
+        "image": "node:22-alpine",
+        "digest_pinned": false,
+        "stage": "frontend-deps"
+      },
+      {
+        "dockerfile": "src/frontend/Dockerfile",
+        "image": "nginxinc/nginx-unprivileged:alpine3.24",
+        "digest_pinned": false,
+        "stage": "frontend-production"
+      }
+    ]
+  },
+  "release": {
+    "tag": "v0.26.0",
+    "published_at": "2026-11-04T09:37:30Z",
+    "days": 5
+  }
+}

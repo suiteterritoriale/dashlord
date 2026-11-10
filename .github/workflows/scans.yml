@@ -1,0 +1,54 @@
+name: DashLord scans
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Single url to scan or scan all urls"
+        required: false
+        default: ""
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - "dashlord.yaml"
+      - "dashlord.yml"
+  schedule:
+    - cron: "0 0 * * *" # every day at midnight UTC, see https://crontab.guru
+
+# allow only one concurrent scan action
+concurrency:
+  cancel-in-progress: true
+  group: scans
+
+jobs:
+  scans:
+    runs-on: ubuntu-latest
+    name: Scan
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+
+      # single runner: scans every repo sequentially and writes results/
+      # directly (no matrix, no init/save actions needed)
+      - name: Repository checks (runtime, distroless, caddy, pinned images, SECURITY.md)
+        timeout-minutes: 30
+        env:
+          SCAN_URL: ${{ github.event.inputs.url }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          if [ -n "$SCAN_URL" ]; then
+            node scripts/repocheks.mjs --url "$SCAN_URL" --results-dir results
+          else
+            node scripts/repocheks.mjs --all --results-dir results
+          fi
+
+      - name: "Commit results"
+        run: |
+          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git config --global user.name GitHub
+          git add "results"
+          git commit -m "update: scans results" || true
+          git pull --rebase --no-ff origin ${{ github.ref }}
+          git push

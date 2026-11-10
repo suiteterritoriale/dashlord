@@ -1,0 +1,1657 @@
+[
+  {
+    "404": null,
+    "url": "https://github.com/suitenumerique/messages",
+    "category": "core",
+    "repositories": [
+      "suitenumerique/messages"
+    ],
+    "http": null,
+    "updownio": null,
+    "nmap": null,
+    "dependabot": null,
+    "codescan": null,
+    "testssl": null,
+    "thirdparties": null,
+    "wappalyzer": null,
+    "zap": null,
+    "nuclei": [],
+    "lhr": null,
+    "screenshot": false,
+    "stats": null,
+    "github_repository": null,
+    "budget_page": null,
+    "declaration-a11y": null,
+    "declaration-rgpd": null,
+    "betagouv": null,
+    "ecoindex": null,
+    "sonarcloud": null,
+    "dsfr": null,
+    "repocheks": {
+      "repository": "suitenumerique/messages",
+      "url": "https://github.com/suitenumerique/messages",
+      "branch": "main",
+      "scan_date": "2026-11-10T08:44:19.326Z",
+      "error": null,
+      "security_md": {
+        "present": true,
+        "path": "SECURITY.md"
+      },
+      "backend": {
+        "dockerfile": "src/backend/Dockerfile",
+        "runtime": {
+          "language": "python",
+          "version": "3.14.10",
+          "strategy": "shared-uv-base-image",
+          "source": "deploy/python-uv/Dockerfile"
+        },
+        "distroless": {
+          "supported": true,
+          "images": [
+            {
+              "image": "gcr.io/distroless/cc-debian13:nonroot",
+              "digest_pinned": true,
+              "stage": "runtime-distroless-prod"
+            }
+          ]
+        },
+        "healthcheck": {
+          "present": true,
+          "count": 2
+        },
+        "runs_as_non_root": {
+          "supported": true,
+          "evidence": "base distroless :nonroot"
+        }
+      },
+      "frontend": {
+        "dockerfile": "src/frontend/Dockerfile",
+        "caddy": true,
+        "server": "caddy",
+        "entrypoint": "ENTRYPOINT [\"caddy\", \"run\", \"--config\", \"/etc/caddy/Caddyfile\", \"--adapter\", \"caddyfile\"]",
+        "distroless": {
+          "supported": true,
+          "images": [
+            {
+              "image": "gcr.io/distroless/static-debian13:nonroot",
+              "digest_pinned": true,
+              "stage": "runtime-prod"
+            }
+          ]
+        },
+        "monolith": false
+      },
+      "ui_components": [
+        {
+          "name": "@gouvfr-lasuite/ui-components",
+          "spec": "1.3.0",
+          "source": "src/frontend/package.json"
+        }
+      ],
+      "dependencies": {
+        "python": {
+          "django": "5.2.18",
+          "django-lasuite": "0.0.31",
+          "package_manager": {
+            "name": "uv",
+            "version": null
+          }
+        },
+        "node": {
+          "next": null,
+          "typescript": "5.9.3",
+          "bundler": {
+            "name": "vite",
+            "version": "8.1.5"
+          },
+          "router": {
+            "name": "@tanstack/react-router",
+            "version": "1.170.8"
+          },
+          "package_manager": {
+            "name": "npm",
+            "version": null
+          }
+        }
+      },
+      "base_images": {
+        "pinned": true,
+        "images": [
+          {
+            "dockerfile": "src/backend/Dockerfile",
+            "image": "gcr.io/distroless/cc-debian13:nonroot",
+            "digest_pinned": true,
+            "stage": "runtime-distroless-prod"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "node:24.22.1-slim",
+            "digest_pinned": true,
+            "stage": "frontend-dev-base"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "alpine:3.21",
+            "digest_pinned": true,
+            "stage": "tools-download"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "gcr.io/distroless/static-debian13:nonroot",
+            "digest_pinned": true,
+            "stage": "runtime-prod"
+          }
+        ]
+      },
+      "release": {
+        "tag": "v0.10.0",
+        "published_at": "2026-09-29T13:14:21Z",
+        "days": 41
+      }
+    },
+    "summary": {}
+  },
+  {
+    "404": null,
+    "url": "https://github.com/suitenumerique/calendars",
+    "category": "core",
+    "repositories": [
+      "suitenumerique/calendars"
+    ],
+    "http": null,
+    "updownio": null,
+    "nmap": null,
+    "dependabot": null,
+    "codescan": null,
+    "testssl": null,
+    "thirdparties": null,
+    "wappalyzer": null,
+    "zap": null,
+    "nuclei": [],
+    "lhr": null,
+    "screenshot": false,
+    "stats": null,
+    "github_repository": null,
+    "budget_page": null,
+    "declaration-a11y": null,
+    "declaration-rgpd": null,
+    "betagouv": null,
+    "ecoindex": null,
+    "sonarcloud": null,
+    "dsfr": null,
+    "repocheks": {
+      "repository": "suitenumerique/calendars",
+      "url": "https://github.com/suitenumerique/calendars",
+      "branch": "main",
+      "scan_date": "2026-11-10T08:44:20.761Z",
+      "error": null,
+      "security_md": {
+        "present": true,
+        "path": "SECURITY.md"
+      },
+      "backend": {
+        "dockerfile": "src/backend/Dockerfile",
+        "runtime": {
+          "language": "python",
+          "version": "3.14.8",
+          "strategy": "python-base-image",
+          "source": "src/backend/Dockerfile"
+        },
+        "distroless": {
+          "supported": false,
+          "images": []
+        },
+        "healthcheck": {
+          "present": false,
+          "count": 0
+        },
+        "runs_as_non_root": {
+          "supported": true,
+          "evidence": "USER ${DOCKER_USER}"
+        }
+      },
+      "frontend": {
+        "dockerfile": "src/frontend/Dockerfile",
+        "caddy": true,
+        "server": "caddy",
+        "entrypoint": "ENTRYPOINT [\"caddy\", \"run\", \"--config\", \"/etc/caddy/Caddyfile\", \"--adapter\", \"caddyfile\"]",
+        "distroless": {
+          "supported": true,
+          "images": [
+            {
+              "image": "gcr.io/distroless/static-debian13:nonroot",
+              "digest_pinned": true,
+              "stage": "frontend-production"
+            }
+          ]
+        },
+        "monolith": false
+      },
+      "ui_components": [
+        {
+          "name": "@gouvfr-lasuite/ui-components",
+          "spec": "1.4.0",
+          "source": "src/frontend/package.json"
+        },
+        {
+          "name": "@gouvfr-lasuite/ui-tokens",
+          "spec": "3.2.0",
+          "source": "src/frontend/package.json"
+        }
+      ],
+      "dependencies": {
+        "python": {
+          "django": "5.2.17",
+          "django-lasuite": "0.0.21",
+          "package_manager": {
+            "name": "uv",
+            "version": "0.13.4"
+          }
+        },
+        "node": {
+          "next": null,
+          "typescript": "5.9.3",
+          "bundler": {
+            "name": "vite",
+            "version": "8.1.5"
+          },
+          "router": {
+            "name": "@tanstack/react-router",
+            "version": "1.170.15"
+          },
+          "package_manager": {
+            "name": "npm",
+            "version": null
+          }
+        }
+      },
+      "base_images": {
+        "pinned": true,
+        "images": [
+          {
+            "dockerfile": "src/backend/Dockerfile",
+            "image": "python:3.14.8-alpine",
+            "digest_pinned": true,
+            "stage": "base"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "node:24.22.1-alpine",
+            "digest_pinned": true,
+            "stage": "frontend-deps"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "alpine:3.21",
+            "digest_pinned": true,
+            "stage": "tools-download"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "gcr.io/distroless/static-debian13:nonroot",
+            "digest_pinned": true,
+            "stage": "frontend-production"
+          }
+        ]
+      },
+      "release": {
+        "tag": "v0.1.0",
+        "published_at": "2026-06-18T07:19:56Z",
+        "days": 145
+      }
+    },
+    "summary": {}
+  },
+  {
+    "404": null,
+    "url": "https://github.com/suitenumerique/drive",
+    "category": "core",
+    "repositories": [
+      "suitenumerique/drive"
+    ],
+    "http": null,
+    "updownio": null,
+    "nmap": null,
+    "dependabot": null,
+    "codescan": null,
+    "testssl": null,
+    "thirdparties": null,
+    "wappalyzer": null,
+    "zap": null,
+    "nuclei": [],
+    "lhr": null,
+    "screenshot": false,
+    "stats": null,
+    "github_repository": null,
+    "budget_page": null,
+    "declaration-a11y": null,
+    "declaration-rgpd": null,
+    "betagouv": null,
+    "ecoindex": null,
+    "sonarcloud": null,
+    "dsfr": null,
+    "repocheks": {
+      "repository": "suitenumerique/drive",
+      "url": "https://github.com/suitenumerique/drive",
+      "branch": "main",
+      "scan_date": "2026-11-10T08:44:22.841Z",
+      "error": null,
+      "security_md": {
+        "present": true,
+        "path": "SECURITY.md"
+      },
+      "backend": {
+        "dockerfile": "Dockerfile",
+        "runtime": {
+          "language": "python",
+          "version": "3.13.17",
+          "strategy": "python-base-image",
+          "source": "Dockerfile"
+        },
+        "distroless": {
+          "supported": false,
+          "images": []
+        },
+        "healthcheck": {
+          "present": false,
+          "count": 0
+        },
+        "runs_as_non_root": {
+          "supported": true,
+          "evidence": "USER ${DOCKER_USER}"
+        }
+      },
+      "frontend": {
+        "dockerfile": "src/frontend/Dockerfile",
+        "caddy": false,
+        "server": "nginx",
+        "entrypoint": "ENTRYPOINT [ \"/usr/local/bin/entrypoint\" ]",
+        "distroless": {
+          "supported": false,
+          "images": []
+        },
+        "monolith": false
+      },
+      "ui_components": [
+        {
+          "name": "@gouvfr-lasuite/ui-components",
+          "spec": "1.5.0",
+          "source": "src/frontend/apps/drive/package.json"
+        }
+      ],
+      "dependencies": {
+        "python": {
+          "django": "5.2.17",
+          "django-lasuite": "0.1.0",
+          "package_manager": {
+            "name": "uv",
+            "version": "0.13.4"
+          }
+        },
+        "node": {
+          "next": "15.5.27",
+          "typescript": "5.4.5",
+          "bundler": {
+            "name": "next",
+            "version": "15.5.27"
+          },
+          "router": {
+            "name": "next",
+            "version": "15.5.27"
+          },
+          "package_manager": {
+            "name": "yarn",
+            "version": "1"
+          }
+        }
+      },
+      "base_images": {
+        "pinned": false,
+        "images": [
+          {
+            "dockerfile": "Dockerfile",
+            "image": "ghcr.io/astral-sh/uv:0.13.4",
+            "digest_pinned": false,
+            "stage": "uv"
+          },
+          {
+            "dockerfile": "Dockerfile",
+            "image": "python:3.13.17-alpine",
+            "digest_pinned": false,
+            "stage": "base"
+          },
+          {
+            "dockerfile": "Dockerfile",
+            "image": "node:22",
+            "digest_pinned": false,
+            "stage": "mail-builder"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "node:22-alpine",
+            "digest_pinned": false,
+            "stage": "frontend-deps"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "nginxinc/nginx-unprivileged:alpine3.24",
+            "digest_pinned": false,
+            "stage": "frontend-production"
+          }
+        ]
+      },
+      "release": {
+        "tag": "v0.26.0",
+        "published_at": "2026-11-04T09:37:30Z",
+        "days": 5
+      }
+    },
+    "summary": {}
+  },
+  {
+    "404": null,
+    "url": "https://github.com/suitenumerique/transfers",
+    "category": "core",
+    "repositories": [
+      "suitenumerique/transfers"
+    ],
+    "http": null,
+    "updownio": null,
+    "nmap": null,
+    "dependabot": null,
+    "codescan": null,
+    "testssl": null,
+    "thirdparties": null,
+    "wappalyzer": null,
+    "zap": null,
+    "nuclei": [],
+    "lhr": null,
+    "screenshot": false,
+    "stats": null,
+    "github_repository": null,
+    "budget_page": null,
+    "declaration-a11y": null,
+    "declaration-rgpd": null,
+    "betagouv": null,
+    "ecoindex": null,
+    "sonarcloud": null,
+    "dsfr": null,
+    "repocheks": {
+      "repository": "suitenumerique/transfers",
+      "url": "https://github.com/suitenumerique/transfers",
+      "branch": "main",
+      "scan_date": "2026-11-10T08:44:24.033Z",
+      "error": null,
+      "security_md": {
+        "present": true,
+        "path": "SECURITY.md"
+      },
+      "backend": {
+        "dockerfile": "src/backend/Dockerfile",
+        "runtime": {
+          "language": "python",
+          "version": "3.14.10",
+          "strategy": "uv-managed-python",
+          "source": "src/backend/Dockerfile"
+        },
+        "distroless": {
+          "supported": true,
+          "images": [
+            {
+              "image": "gcr.io/distroless/cc-debian13:nonroot",
+              "digest_pinned": false,
+              "stage": "runtime-distroless-prod"
+            }
+          ]
+        },
+        "healthcheck": {
+          "present": true,
+          "count": 2
+        },
+        "runs_as_non_root": {
+          "supported": true,
+          "evidence": "base distroless :nonroot"
+        }
+      },
+      "frontend": {
+        "dockerfile": "src/frontend/Dockerfile",
+        "caddy": true,
+        "server": "caddy",
+        "entrypoint": "ENTRYPOINT [\"caddy\", \"run\", \"--config\", \"/etc/caddy/Caddyfile\", \"--adapter\", \"caddyfile\"]",
+        "distroless": {
+          "supported": true,
+          "images": [
+            {
+              "image": "gcr.io/distroless/static-debian13:nonroot",
+              "digest_pinned": false,
+              "stage": "runtime-prod"
+            }
+          ]
+        },
+        "monolith": false
+      },
+      "ui_components": [
+        {
+          "name": "@gouvfr-lasuite/cunningham-react",
+          "spec": "4.3.0",
+          "source": "src/frontend/package.json"
+        },
+        {
+          "name": "@gouvfr-lasuite/ui-kit",
+          "spec": "0.23.2",
+          "source": "src/frontend/package.json"
+        }
+      ],
+      "dependencies": {
+        "python": {
+          "django": "5.2.17",
+          "django-lasuite": "0.0.24",
+          "package_manager": {
+            "name": "uv",
+            "version": "0.13.6"
+          }
+        },
+        "node": {
+          "next": null,
+          "typescript": "5.9.3",
+          "bundler": {
+            "name": "vite",
+            "version": "8.0.16"
+          },
+          "router": {
+            "name": "@tanstack/react-router",
+            "version": "1.170.15"
+          },
+          "package_manager": {
+            "name": "npm",
+            "version": null
+          }
+        }
+      },
+      "base_images": {
+        "pinned": false,
+        "images": [
+          {
+            "dockerfile": "src/backend/Dockerfile",
+            "image": "debian:trixie-slim",
+            "digest_pinned": false,
+            "stage": "base"
+          },
+          {
+            "dockerfile": "src/backend/Dockerfile",
+            "image": "gcr.io/distroless/cc-debian13:nonroot",
+            "digest_pinned": false,
+            "stage": "runtime-distroless-prod"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "node:24.21.0-alpine",
+            "digest_pinned": true,
+            "stage": "frontend-deps"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "golang:1.26.9-alpine",
+            "digest_pinned": true,
+            "stage": "go-build"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "gcr.io/distroless/static-debian13:nonroot",
+            "digest_pinned": false,
+            "stage": "runtime-prod"
+          }
+        ]
+      },
+      "release": {
+        "tag": null,
+        "published_at": null,
+        "days": null
+      }
+    },
+    "summary": {}
+  },
+  {
+    "404": null,
+    "url": "https://github.com/suiteterritoriale/deploycenter",
+    "category": "core",
+    "repositories": [
+      "suiteterritoriale/deploycenter"
+    ],
+    "http": null,
+    "updownio": null,
+    "nmap": null,
+    "dependabot": null,
+    "codescan": null,
+    "testssl": null,
+    "thirdparties": null,
+    "wappalyzer": null,
+    "zap": null,
+    "nuclei": [],
+    "lhr": null,
+    "screenshot": false,
+    "stats": null,
+    "github_repository": null,
+    "budget_page": null,
+    "declaration-a11y": null,
+    "declaration-rgpd": null,
+    "betagouv": null,
+    "ecoindex": null,
+    "sonarcloud": null,
+    "dsfr": null,
+    "repocheks": {
+      "repository": "suiteterritoriale/deploycenter",
+      "url": "https://github.com/suiteterritoriale/deploycenter",
+      "branch": "main",
+      "scan_date": "2026-11-10T08:44:25.980Z",
+      "error": null,
+      "security_md": {
+        "present": true,
+        "path": "SECURITY.md"
+      },
+      "backend": {
+        "dockerfile": "src/backend/Dockerfile",
+        "runtime": {
+          "language": "python",
+          "version": "3.14.9",
+          "strategy": "uv-managed-python",
+          "source": "src/backend/Dockerfile"
+        },
+        "distroless": {
+          "supported": true,
+          "images": [
+            {
+              "image": "gcr.io/distroless/cc-debian13:nonroot",
+              "digest_pinned": true,
+              "stage": "runtime-distroless-prod"
+            }
+          ]
+        },
+        "healthcheck": {
+          "present": true,
+          "count": 2
+        },
+        "runs_as_non_root": {
+          "supported": true,
+          "evidence": "base distroless :nonroot"
+        }
+      },
+      "frontend": {
+        "dockerfile": "src/frontend/Dockerfile",
+        "caddy": true,
+        "server": "caddy",
+        "entrypoint": "ENTRYPOINT [\"caddy\", \"run\", \"--config\", \"/etc/caddy/Caddyfile\", \"--adapter\", \"caddyfile\"]",
+        "distroless": {
+          "supported": true,
+          "images": [
+            {
+              "image": "gcr.io/distroless/static-debian13:nonroot",
+              "digest_pinned": true,
+              "stage": "runtime-distroless-prod"
+            }
+          ]
+        },
+        "monolith": false
+      },
+      "ui_components": [
+        {
+          "name": "@gouvfr-lasuite/ui-components",
+          "spec": "1.3.0",
+          "source": "src/frontend/package.json"
+        }
+      ],
+      "dependencies": {
+        "python": {
+          "django": "5.2.18",
+          "package_manager": {
+            "name": "uv",
+            "version": null
+          }
+        },
+        "node": {
+          "next": "16.4.3",
+          "typescript": "6.0.3",
+          "bundler": {
+            "name": "next",
+            "version": "16.4.3"
+          },
+          "router": {
+            "name": "next",
+            "version": "16.4.3"
+          },
+          "package_manager": {
+            "name": "npm",
+            "version": null
+          }
+        }
+      },
+      "base_images": {
+        "pinned": true,
+        "images": [
+          {
+            "dockerfile": "src/backend/Dockerfile",
+            "image": "debian:trixie-slim",
+            "digest_pinned": true,
+            "stage": "base"
+          },
+          {
+            "dockerfile": "src/backend/Dockerfile",
+            "image": "gcr.io/distroless/cc-debian13:nonroot",
+            "digest_pinned": true,
+            "stage": "runtime-distroless-prod"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "node:24.22.1-slim",
+            "digest_pinned": true,
+            "stage": "frontend-base"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "golang:1.27.3",
+            "digest_pinned": true,
+            "stage": "caddy-build"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "debian:trixie-slim",
+            "digest_pinned": true,
+            "stage": "tools-download"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "gcr.io/distroless/static-debian13:nonroot",
+            "digest_pinned": true,
+            "stage": "runtime-distroless-prod"
+          }
+        ]
+      },
+      "release": {
+        "tag": null,
+        "published_at": null,
+        "days": null
+      }
+    },
+    "summary": {}
+  },
+  {
+    "404": null,
+    "url": "https://github.com/suitenumerique/file-scanner",
+    "category": "core",
+    "repositories": [
+      "suitenumerique/file-scanner"
+    ],
+    "http": null,
+    "updownio": null,
+    "nmap": null,
+    "dependabot": null,
+    "codescan": null,
+    "testssl": null,
+    "thirdparties": null,
+    "wappalyzer": null,
+    "zap": null,
+    "nuclei": [],
+    "lhr": null,
+    "screenshot": false,
+    "stats": null,
+    "github_repository": null,
+    "budget_page": null,
+    "declaration-a11y": null,
+    "declaration-rgpd": null,
+    "betagouv": null,
+    "ecoindex": null,
+    "sonarcloud": null,
+    "dsfr": null,
+    "repocheks": {
+      "repository": "suitenumerique/file-scanner",
+      "url": "https://github.com/suitenumerique/file-scanner",
+      "branch": "main",
+      "scan_date": "2026-11-10T08:44:28.311Z",
+      "error": null,
+      "security_md": {
+        "present": true,
+        "path": "SECURITY.md"
+      },
+      "backend": {
+        "dockerfile": "Dockerfile",
+        "runtime": {
+          "language": "python",
+          "version": "3.14.10",
+          "strategy": "uv-managed-python",
+          "source": "Dockerfile"
+        },
+        "distroless": {
+          "supported": true,
+          "images": [
+            {
+              "image": "gcr.io/distroless/cc-debian13:nonroot",
+              "digest_pinned": false,
+              "stage": "runtime-distroless-prod"
+            }
+          ]
+        },
+        "healthcheck": {
+          "present": true,
+          "count": 1
+        },
+        "runs_as_non_root": {
+          "supported": true,
+          "evidence": "base distroless :nonroot"
+        }
+      },
+      "frontend": null,
+      "ui_components": null,
+      "dependencies": {
+        "python": {
+          "package_manager": {
+            "name": "uv",
+            "version": "0.13.6"
+          }
+        },
+        "node": null
+      },
+      "base_images": {
+        "pinned": false,
+        "images": [
+          {
+            "dockerfile": "Dockerfile",
+            "image": "ghcr.io/astral-sh/uv:${UV_VERSION}",
+            "digest_pinned": false,
+            "stage": "uv-bin"
+          },
+          {
+            "dockerfile": "Dockerfile",
+            "image": "debian:trixie-slim",
+            "digest_pinned": false,
+            "stage": "uv"
+          },
+          {
+            "dockerfile": "Dockerfile",
+            "image": "gcr.io/distroless/cc-debian13:nonroot",
+            "digest_pinned": false,
+            "stage": "runtime-distroless-prod"
+          }
+        ]
+      },
+      "release": {
+        "tag": null,
+        "published_at": null,
+        "days": null
+      }
+    },
+    "summary": {}
+  },
+  {
+    "404": null,
+    "url": "https://github.com/suitenumerique/conversations",
+    "category": "extras",
+    "repositories": [
+      "suitenumerique/conversations"
+    ],
+    "http": null,
+    "updownio": null,
+    "nmap": null,
+    "dependabot": null,
+    "codescan": null,
+    "testssl": null,
+    "thirdparties": null,
+    "wappalyzer": null,
+    "zap": null,
+    "nuclei": [],
+    "lhr": null,
+    "screenshot": false,
+    "stats": null,
+    "github_repository": null,
+    "budget_page": null,
+    "declaration-a11y": null,
+    "declaration-rgpd": null,
+    "betagouv": null,
+    "ecoindex": null,
+    "sonarcloud": null,
+    "dsfr": null,
+    "repocheks": {
+      "repository": "suitenumerique/conversations",
+      "url": "https://github.com/suitenumerique/conversations",
+      "branch": "main",
+      "scan_date": "2026-11-10T08:44:30.389Z",
+      "error": null,
+      "security_md": {
+        "present": true,
+        "path": "SECURITY.md"
+      },
+      "backend": {
+        "dockerfile": "Dockerfile",
+        "runtime": {
+          "language": "python",
+          "version": "3.14.6",
+          "strategy": "python-base-image",
+          "source": "Dockerfile"
+        },
+        "distroless": {
+          "supported": false,
+          "images": []
+        },
+        "healthcheck": {
+          "present": false,
+          "count": 0
+        },
+        "runs_as_non_root": {
+          "supported": true,
+          "evidence": "USER ${DOCKER_USER}"
+        }
+      },
+      "frontend": {
+        "dockerfile": "src/frontend/Dockerfile",
+        "caddy": false,
+        "server": "nginx",
+        "entrypoint": "ENTRYPOINT [ \"/usr/local/bin/entrypoint\" ]",
+        "distroless": {
+          "supported": false,
+          "images": []
+        },
+        "monolith": false
+      },
+      "ui_components": [
+        {
+          "name": "@gouvfr-lasuite/cunningham-react",
+          "spec": "4.4.0",
+          "source": "src/frontend/apps/conversations/package.json"
+        },
+        {
+          "name": "@gouvfr-lasuite/cunningham-tokens",
+          "spec": "^3.1.0",
+          "source": "src/frontend/apps/conversations/package.json"
+        },
+        {
+          "name": "@gouvfr-lasuite/ui-kit",
+          "spec": "0.28.1",
+          "source": "src/frontend/apps/conversations/package.json"
+        }
+      ],
+      "dependencies": {
+        "python": {
+          "django": "5.2.18",
+          "django-lasuite": "0.1.0",
+          "package_manager": {
+            "name": "uv",
+            "version": "0.9.26"
+          }
+        },
+        "node": {
+          "next": null,
+          "typescript": "*",
+          "bundler": {
+            "name": "vite",
+            "version": "8.3.5"
+          },
+          "router": {
+            "name": "react-router",
+            "version": "7.18.2"
+          },
+          "package_manager": {
+            "name": "yarn",
+            "version": "1"
+          }
+        }
+      },
+      "base_images": {
+        "pinned": false,
+        "images": [
+          {
+            "dockerfile": "Dockerfile",
+            "image": "python:3.14.6-alpine",
+            "digest_pinned": false,
+            "stage": "base"
+          },
+          {
+            "dockerfile": "Dockerfile",
+            "image": "node:24",
+            "digest_pinned": false,
+            "stage": "mail-builder"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "node:24-alpine",
+            "digest_pinned": false,
+            "stage": "frontend-deps"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "nginxinc/nginx-unprivileged:alpine3.22",
+            "digest_pinned": false,
+            "stage": "frontend-production"
+          }
+        ]
+      },
+      "release": {
+        "tag": "v0.0.28",
+        "published_at": "2026-11-03T21:22:07Z",
+        "days": 6
+      }
+    },
+    "summary": {}
+  },
+  {
+    "404": null,
+    "url": "https://github.com/suitenumerique/docs",
+    "category": "extras",
+    "repositories": [
+      "suitenumerique/docs"
+    ],
+    "http": null,
+    "updownio": null,
+    "nmap": null,
+    "dependabot": null,
+    "codescan": null,
+    "testssl": null,
+    "thirdparties": null,
+    "wappalyzer": null,
+    "zap": null,
+    "nuclei": [],
+    "lhr": null,
+    "screenshot": false,
+    "stats": null,
+    "github_repository": null,
+    "budget_page": null,
+    "declaration-a11y": null,
+    "declaration-rgpd": null,
+    "betagouv": null,
+    "ecoindex": null,
+    "sonarcloud": null,
+    "dsfr": null,
+    "repocheks": {
+      "repository": "suitenumerique/docs",
+      "url": "https://github.com/suitenumerique/docs",
+      "branch": "main",
+      "scan_date": "2026-11-10T08:44:33.669Z",
+      "error": null,
+      "security_md": {
+        "present": true,
+        "path": "SECURITY.md"
+      },
+      "backend": {
+        "dockerfile": "Dockerfile",
+        "runtime": {
+          "language": "python",
+          "version": "3.14.8",
+          "strategy": "python-base-image",
+          "source": "Dockerfile"
+        },
+        "distroless": {
+          "supported": false,
+          "images": []
+        },
+        "healthcheck": {
+          "present": false,
+          "count": 0
+        },
+        "runs_as_non_root": {
+          "supported": true,
+          "evidence": "USER ${DOCKER_USER}"
+        }
+      },
+      "frontend": {
+        "dockerfile": "src/frontend/Dockerfile",
+        "caddy": false,
+        "server": "nginx",
+        "entrypoint": "ENTRYPOINT [ \"/usr/local/bin/entrypoint\" ]",
+        "distroless": {
+          "supported": false,
+          "images": []
+        },
+        "monolith": false
+      },
+      "ui_components": [
+        {
+          "name": "@gouvfr-lasuite/ui-components",
+          "spec": "1.2.0",
+          "source": "src/frontend/apps/impress/package.json"
+        },
+        {
+          "name": "@gouvfr-lasuite/ui-tokens",
+          "spec": "3.2.0",
+          "source": "src/frontend/apps/impress/package.json"
+        }
+      ],
+      "dependencies": {
+        "python": {
+          "django": "5.2.17",
+          "django-lasuite": "0.1.0",
+          "package_manager": {
+            "name": "uv",
+            "version": "0.13.4"
+          }
+        },
+        "node": {
+          "next": "16.4.3",
+          "typescript": "*",
+          "bundler": {
+            "name": "next",
+            "version": "16.4.3"
+          },
+          "router": {
+            "name": "next",
+            "version": "16.4.3"
+          },
+          "package_manager": {
+            "name": "yarn",
+            "version": "1.22.22"
+          }
+        }
+      },
+      "base_images": {
+        "pinned": false,
+        "images": [
+          {
+            "dockerfile": "Dockerfile",
+            "image": "ghcr.io/astral-sh/uv:0.13.4",
+            "digest_pinned": false,
+            "stage": "uv"
+          },
+          {
+            "dockerfile": "Dockerfile",
+            "image": "python:3.14.8-alpine",
+            "digest_pinned": false,
+            "stage": "base"
+          },
+          {
+            "dockerfile": "Dockerfile",
+            "image": "node:24",
+            "digest_pinned": false,
+            "stage": "mail-builder"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "node:24-alpine",
+            "digest_pinned": false,
+            "stage": "frontend-deps"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "nginx/nginx-unprivileged:alpine3.24",
+            "digest_pinned": false,
+            "stage": "frontend-production"
+          }
+        ]
+      },
+      "release": {
+        "tag": "v6.0.4",
+        "published_at": "2026-10-26T15:55:09Z",
+        "days": 14
+      }
+    },
+    "summary": {}
+  },
+  {
+    "404": null,
+    "url": "https://github.com/suitenumerique/meet",
+    "category": "extras",
+    "repositories": [
+      "suitenumerique/meet"
+    ],
+    "http": null,
+    "updownio": null,
+    "nmap": null,
+    "dependabot": null,
+    "codescan": null,
+    "testssl": null,
+    "thirdparties": null,
+    "wappalyzer": null,
+    "zap": null,
+    "nuclei": [],
+    "lhr": null,
+    "screenshot": false,
+    "stats": null,
+    "github_repository": null,
+    "budget_page": null,
+    "declaration-a11y": null,
+    "declaration-rgpd": null,
+    "betagouv": null,
+    "ecoindex": null,
+    "sonarcloud": null,
+    "dsfr": null,
+    "repocheks": {
+      "repository": "suitenumerique/meet",
+      "url": "https://github.com/suitenumerique/meet",
+      "branch": "main",
+      "scan_date": "2026-11-10T08:44:35.967Z",
+      "error": null,
+      "security_md": {
+        "present": true,
+        "path": "SECURITY.md"
+      },
+      "backend": {
+        "dockerfile": "Dockerfile",
+        "runtime": {
+          "language": "python",
+          "version": "3.13.16",
+          "strategy": "python-base-image",
+          "source": "Dockerfile"
+        },
+        "distroless": {
+          "supported": false,
+          "images": []
+        },
+        "healthcheck": {
+          "present": false,
+          "count": 0
+        },
+        "runs_as_non_root": {
+          "supported": true,
+          "evidence": "USER ${DOCKER_USER}"
+        }
+      },
+      "frontend": {
+        "dockerfile": "src/frontend/Dockerfile",
+        "caddy": false,
+        "server": "nginx",
+        "entrypoint": "ENTRYPOINT [ \"/usr/local/bin/entrypoint\" ]",
+        "distroless": {
+          "supported": false,
+          "images": []
+        },
+        "monolith": false
+      },
+      "ui_components": null,
+      "dependencies": {
+        "python": {
+          "django": "5.2.17",
+          "django-lasuite": "1.0.0",
+          "package_manager": {
+            "name": "uv",
+            "version": "0.13.4"
+          }
+        },
+        "node": {
+          "next": null,
+          "typescript": "6.0.3",
+          "bundler": {
+            "name": "webpack",
+            "version": "5.105.4"
+          },
+          "router": {
+            "name": "wouter",
+            "version": "3.10.0"
+          },
+          "package_manager": {
+            "name": "npm",
+            "version": null
+          }
+        }
+      },
+      "base_images": {
+        "pinned": false,
+        "images": [
+          {
+            "dockerfile": "Dockerfile",
+            "image": "python:3.13.16-alpine3.24",
+            "digest_pinned": false,
+            "stage": "base"
+          },
+          {
+            "dockerfile": "Dockerfile",
+            "image": "node:22.23.4-alpine",
+            "digest_pinned": false,
+            "stage": "mail-builder"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "node:22.23.4-alpine",
+            "digest_pinned": false,
+            "stage": "frontend-deps"
+          },
+          {
+            "dockerfile": "src/frontend/Dockerfile",
+            "image": "nginxinc/nginx-unprivileged:1.30.6-alpine3.24",
+            "digest_pinned": false,
+            "stage": "frontend-production"
+          }
+        ]
+      },
+      "release": {
+        "tag": "v1.37.0",
+        "published_at": "2026-11-02T09:20:23Z",
+        "days": 7
+      }
+    },
+    "summary": {}
+  },
+  {
+    "404": null,
+    "url": "https://github.com/suitenumerique/projects",
+    "category": "extras",
+    "repositories": [
+      "suitenumerique/projects"
+    ],
+    "http": null,
+    "updownio": null,
+    "nmap": null,
+    "dependabot": null,
+    "codescan": null,
+    "testssl": null,
+    "thirdparties": null,
+    "wappalyzer": null,
+    "zap": null,
+    "nuclei": [],
+    "lhr": null,
+    "screenshot": false,
+    "stats": null,
+    "github_repository": null,
+    "budget_page": null,
+    "declaration-a11y": null,
+    "declaration-rgpd": null,
+    "betagouv": null,
+    "ecoindex": null,
+    "sonarcloud": null,
+    "dsfr": null,
+    "repocheks": {
+      "repository": "suitenumerique/projects",
+      "url": "https://github.com/suitenumerique/projects",
+      "branch": "main",
+      "scan_date": "2026-11-10T08:44:37.758Z",
+      "error": null,
+      "security_md": {
+        "present": true,
+        "path": "SECURITY.md"
+      },
+      "backend": {
+        "dockerfile": "Dockerfile",
+        "runtime": {
+          "language": "node",
+          "version": "22.23.4",
+          "strategy": "node-base-image",
+          "source": "Dockerfile"
+        },
+        "distroless": {
+          "supported": false,
+          "images": []
+        },
+        "healthcheck": {
+          "present": true,
+          "count": 1
+        },
+        "runs_as_non_root": {
+          "supported": true,
+          "evidence": "USER node"
+        }
+      },
+      "frontend": {
+        "dockerfile": "Dockerfile",
+        "caddy": false,
+        "server": "node",
+        "entrypoint": "CMD [\"./start.sh\"]",
+        "distroless": null,
+        "monolith": true
+      },
+      "ui_components": [
+        {
+          "name": "@gouvfr-lasuite/cunningham-react",
+          "spec": "^4.4.0",
+          "source": "client/package.json"
+        },
+        {
+          "name": "@gouvfr-lasuite/ui-kit",
+          "spec": "^0.28.1",
+          "source": "client/package.json"
+        }
+      ],
+      "dependencies": {
+        "python": null,
+        "node": {
+          "next": null,
+          "typescript": "^5.9.2",
+          "bundler": null,
+          "router": {
+            "name": "react-router-dom",
+            "version": "^6.28.0"
+          },
+          "package_manager": {
+            "name": "npm",
+            "version": null
+          }
+        }
+      },
+      "base_images": {
+        "pinned": false,
+        "images": [
+          {
+            "dockerfile": "Dockerfile",
+            "image": "node:${NODE_VERSION}-alpine",
+            "digest_pinned": false,
+            "stage": "server-dependencies"
+          }
+        ]
+      },
+      "release": {
+        "tag": "v1.2.0",
+        "published_at": "2026-02-06T18:09:52Z",
+        "days": 276
+      }
+    },
+    "summary": {}
+  },
+  {
+    "404": null,
+    "url": "https://github.com/suiteterritoriale/home",
+    "category": "extras",
+    "repositories": [
+      "suiteterritoriale/home"
+    ],
+    "http": null,
+    "updownio": null,
+    "nmap": null,
+    "dependabot": null,
+    "codescan": null,
+    "testssl": null,
+    "thirdparties": null,
+    "wappalyzer": null,
+    "zap": null,
+    "nuclei": [],
+    "lhr": null,
+    "screenshot": false,
+    "stats": null,
+    "github_repository": null,
+    "budget_page": null,
+    "declaration-a11y": null,
+    "declaration-rgpd": null,
+    "betagouv": null,
+    "ecoindex": null,
+    "sonarcloud": null,
+    "dsfr": null,
+    "repocheks": {
+      "repository": "suiteterritoriale/home",
+      "url": "https://github.com/suiteterritoriale/home",
+      "branch": "main",
+      "scan_date": "2026-11-10T08:44:45.233Z",
+      "error": null,
+      "security_md": {
+        "present": true,
+        "path": "SECURITY.md"
+      },
+      "backend": {
+        "dockerfile": "Dockerfile",
+        "runtime": {
+          "language": "node",
+          "version": "24",
+          "strategy": "node-base-image",
+          "source": "Dockerfile"
+        },
+        "distroless": {
+          "supported": false,
+          "images": []
+        },
+        "healthcheck": {
+          "present": false,
+          "count": 0
+        },
+        "runs_as_non_root": {
+          "supported": false,
+          "evidence": null
+        }
+      },
+      "frontend": {
+        "dockerfile": "Dockerfile",
+        "caddy": false,
+        "server": "node",
+        "entrypoint": "CMD [\"npm\", \"run\", \"dev\"]",
+        "distroless": null,
+        "monolith": true
+      },
+      "ui_components": [
+        {
+          "name": "@codegouvfr/react-dsfr",
+          "spec": "1.26.0",
+          "source": "package.json"
+        }
+      ],
+      "dependencies": {
+        "python": null,
+        "node": {
+          "next": "16.4.5",
+          "typescript": "5.9.2",
+          "bundler": {
+            "name": "next",
+            "version": "16.4.5"
+          },
+          "router": {
+            "name": "next",
+            "version": "16.4.5"
+          },
+          "package_manager": {
+            "name": "npm",
+            "version": "11.16.0"
+          }
+        }
+      },
+      "base_images": {
+        "pinned": false,
+        "images": [
+          {
+            "dockerfile": "Dockerfile",
+            "image": "node:24-slim",
+            "digest_pinned": false,
+            "stage": "runtime-dev"
+          }
+        ]
+      },
+      "release": {
+        "tag": null,
+        "published_at": null,
+        "days": null
+      }
+    },
+    "summary": {}
+  },
+  {
+    "404": null,
+    "url": "https://github.com/suiteterritoriale/helpcenter",
+    "category": "extras",
+    "repositories": [
+      "suiteterritoriale/helpcenter"
+    ],
+    "http": null,
+    "updownio": null,
+    "nmap": null,
+    "dependabot": null,
+    "codescan": null,
+    "testssl": null,
+    "thirdparties": null,
+    "wappalyzer": null,
+    "zap": null,
+    "nuclei": [],
+    "lhr": null,
+    "screenshot": false,
+    "stats": null,
+    "github_repository": null,
+    "budget_page": null,
+    "declaration-a11y": null,
+    "declaration-rgpd": null,
+    "betagouv": null,
+    "ecoindex": null,
+    "sonarcloud": null,
+    "dsfr": null,
+    "repocheks": {
+      "repository": "suiteterritoriale/helpcenter",
+      "url": "https://github.com/suiteterritoriale/helpcenter",
+      "branch": "main",
+      "scan_date": "2026-11-10T08:44:46.346Z",
+      "error": null,
+      "security_md": {
+        "present": true,
+        "path": "SECURITY.md"
+      },
+      "backend": {
+        "dockerfile": "Dockerfile",
+        "runtime": {
+          "language": "node",
+          "version": "22",
+          "strategy": "node-base-image",
+          "source": "Dockerfile"
+        },
+        "distroless": {
+          "supported": false,
+          "images": []
+        },
+        "healthcheck": {
+          "present": false,
+          "count": 0
+        },
+        "runs_as_non_root": {
+          "supported": false,
+          "evidence": null
+        }
+      },
+      "frontend": {
+        "dockerfile": "Dockerfile",
+        "caddy": false,
+        "server": "node",
+        "entrypoint": "CMD [\"npm\", \"run\", \"dev\"]",
+        "distroless": null,
+        "monolith": true
+      },
+      "ui_components": [
+        {
+          "name": "@codegouvfr/react-dsfr",
+          "spec": "1.26.0",
+          "source": "package.json"
+        }
+      ],
+      "dependencies": {
+        "python": null,
+        "node": {
+          "next": "15.5.16",
+          "typescript": "5.9.2",
+          "bundler": {
+            "name": "next",
+            "version": "15.5.16"
+          },
+          "router": {
+            "name": "next",
+            "version": "15.5.16"
+          },
+          "package_manager": {
+            "name": "npm",
+            "version": null
+          }
+        }
+      },
+      "base_images": {
+        "pinned": false,
+        "images": [
+          {
+            "dockerfile": "Dockerfile",
+            "image": "node:22-slim",
+            "digest_pinned": false,
+            "stage": "runtime-dev"
+          }
+        ]
+      },
+      "release": {
+        "tag": null,
+        "published_at": null,
+        "days": null
+      }
+    },
+    "summary": {}
+  }
+]
