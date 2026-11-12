@@ -2,7 +2,7 @@
   "repository": "suitenumerique/calendars",
   "url": "https://github.com/suitenumerique/calendars",
   "branch": "main",
-  "scan_date": "2026-11-11T03:13:40.470Z",
+  "scan_date": "2026-11-12T04:24:50.867Z",
   "error": null,
   "security_md": {
     "present": true,
@@ -12,7 +12,7 @@
     "dockerfile": "src/backend/Dockerfile",
     "runtime": {
       "language": "python",
-      "version": "3.14.8",
+      "version": "3.14.10",
       "strategy": "python-base-image",
       "source": "src/backend/Dockerfile"
     },
@@ -72,7 +72,7 @@
       "typescript": "5.9.3",
       "bundler": {
         "name": "vite",
-        "version": "8.1.5"
+        "version": "8.1.6"
       },
       "router": {
         "name": "@tanstack/react-router",
@@ -89,7 +89,7 @@
     "images": [
       {
         "dockerfile": "src/backend/Dockerfile",
-        "image": "python:3.14.8-alpine",
+        "image": "python:3.14.10-alpine",
         "digest_pinned": true,
         "stage": "base"
       },
@@ -116,6 +116,6 @@
   "release": {
     "tag": "v0.1.0",
     "published_at": "2026-06-18T07:19:56Z",
-    "days": 145
+    "days": 146
   }
 }
