@@ -2,7 +2,7 @@
   "repository": "suitenumerique/calendars",
   "url": "https://github.com/suitenumerique/calendars",
   "branch": "main",
-  "scan_date": "2026-11-12T04:24:50.867Z",
+  "scan_date": "2026-11-13T03:40:30.713Z",
   "error": null,
   "security_md": {
     "present": true,
@@ -114,8 +114,8 @@
     ]
   },
   "release": {
-    "tag": "v0.1.0",
-    "published_at": "2026-06-18T07:19:56Z",
-    "days": 146
+    "tag": "v0.2.0",
+    "published_at": "2026-11-12T16:31:19Z",
+    "days": 0
   }
 }

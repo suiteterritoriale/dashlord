@@ -2,7 +2,7 @@
   "repository": "suiteterritoriale/home",
   "url": "https://github.com/suiteterritoriale/home",
   "branch": "main",
-  "scan_date": "2026-11-12T04:25:05.108Z",
+  "scan_date": "2026-11-13T03:40:43.167Z",
   "error": null,
   "security_md": {
     "present": true,
@@ -12,7 +12,7 @@
     "dockerfile": "Dockerfile",
     "runtime": {
       "language": "node",
-      "version": "24",
+      "version": "24.22.3",
       "strategy": "node-base-image",
       "source": "Dockerfile"
     },
@@ -68,7 +68,7 @@
     "images": [
       {
         "dockerfile": "Dockerfile",
-        "image": "node:24-slim",
+        "image": "node:24.22.3-slim",
         "digest_pinned": false,
         "stage": "runtime-dev"
       }

@@ -2,7 +2,7 @@
   "repository": "suitenumerique/drive",
   "url": "https://github.com/suitenumerique/drive",
   "branch": "main",
-  "scan_date": "2026-11-12T04:24:52.246Z",
+  "scan_date": "2026-11-13T03:40:31.822Z",
   "error": null,
   "security_md": {
     "present": true,
@@ -111,6 +111,6 @@
   "release": {
     "tag": "v0.26.0",
     "published_at": "2026-11-04T09:37:30Z",
-    "days": 7
+    "days": 8
   }
 }

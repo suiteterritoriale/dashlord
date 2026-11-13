@@ -2,7 +2,7 @@
   "repository": "suitenumerique/messages",
   "url": "https://github.com/suitenumerique/messages",
   "branch": "main",
-  "scan_date": "2026-11-12T04:24:49.531Z",
+  "scan_date": "2026-11-13T03:40:29.720Z",
   "error": null,
   "security_md": {
     "present": true,
@@ -117,6 +117,6 @@
   "release": {
     "tag": "v0.10.0",
     "published_at": "2026-09-29T13:14:21Z",
-    "days": 43
+    "days": 44
   }
 }
