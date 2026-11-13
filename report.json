@@ -31,7 +31,7 @@
       "repository": "suitenumerique/messages",
       "url": "https://github.com/suitenumerique/messages",
       "branch": "main",
-      "scan_date": "2026-11-12T04:24:49.531Z",
+      "scan_date": "2026-11-13T03:40:29.720Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -146,7 +146,7 @@
       "release": {
         "tag": "v0.10.0",
         "published_at": "2026-09-29T13:14:21Z",
-        "days": 43
+        "days": 44
       }
     },
     "summary": {}
@@ -183,7 +183,7 @@
       "repository": "suitenumerique/calendars",
       "url": "https://github.com/suitenumerique/calendars",
       "branch": "main",
-      "scan_date": "2026-11-12T04:24:50.867Z",
+      "scan_date": "2026-11-13T03:40:30.713Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -295,9 +295,9 @@
         ]
       },
       "release": {
-        "tag": "v0.1.0",
-        "published_at": "2026-06-18T07:19:56Z",
-        "days": 146
+        "tag": "v0.2.0",
+        "published_at": "2026-11-12T16:31:19Z",
+        "days": 0
       }
     },
     "summary": {}
@@ -334,7 +334,7 @@
       "repository": "suitenumerique/drive",
       "url": "https://github.com/suitenumerique/drive",
       "branch": "main",
-      "scan_date": "2026-11-12T04:24:52.246Z",
+      "scan_date": "2026-11-13T03:40:31.822Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -443,7 +443,7 @@
       "release": {
         "tag": "v0.26.0",
         "published_at": "2026-11-04T09:37:30Z",
-        "days": 7
+        "days": 8
       }
     },
     "summary": {}
@@ -480,7 +480,7 @@
       "repository": "suitenumerique/transfers",
       "url": "https://github.com/suitenumerique/transfers",
       "branch": "main",
-      "scan_date": "2026-11-12T04:24:53.273Z",
+      "scan_date": "2026-11-13T03:40:32.558Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -643,7 +643,7 @@
       "repository": "suiteterritoriale/deploycenter",
       "url": "https://github.com/suiteterritoriale/deploycenter",
       "branch": "main",
-      "scan_date": "2026-11-12T04:24:54.381Z",
+      "scan_date": "2026-11-13T03:40:33.421Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -806,7 +806,7 @@
       "repository": "suitenumerique/file-scanner",
       "url": "https://github.com/suitenumerique/file-scanner",
       "branch": "main",
-      "scan_date": "2026-11-12T04:24:55.440Z",
+      "scan_date": "2026-11-13T03:40:34.135Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -913,7 +913,7 @@
       "repository": "suitenumerique/conversations",
       "url": "https://github.com/suitenumerique/conversations",
       "branch": "main",
-      "scan_date": "2026-11-12T04:24:56.760Z",
+      "scan_date": "2026-11-13T03:40:35.157Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -1026,7 +1026,7 @@
       "release": {
         "tag": "v0.0.28",
         "published_at": "2026-11-03T21:22:07Z",
-        "days": 8
+        "days": 9
       }
     },
     "summary": {}
@@ -1063,7 +1063,7 @@
       "repository": "suitenumerique/docs",
       "url": "https://github.com/suitenumerique/docs",
       "branch": "main",
-      "scan_date": "2026-11-12T04:24:58.735Z",
+      "scan_date": "2026-11-13T03:40:36.951Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -1177,7 +1177,7 @@
       "release": {
         "tag": "v6.0.4",
         "published_at": "2026-10-26T15:55:09Z",
-        "days": 16
+        "days": 17
       }
     },
     "summary": {}
@@ -1214,7 +1214,7 @@
       "repository": "suitenumerique/meet",
       "url": "https://github.com/suitenumerique/meet",
       "branch": "main",
-      "scan_date": "2026-11-12T04:25:00.197Z",
+      "scan_date": "2026-11-13T03:40:38.273Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -1302,7 +1302,7 @@
           },
           {
             "dockerfile": "src/frontend/Dockerfile",
-            "image": "nginxinc/nginx-unprivileged:1.30.6-alpine3.24",
+            "image": "nginx/nginx-unprivileged:1.30.6-alpine3.24",
             "digest_pinned": false,
             "stage": "frontend-production"
           }
@@ -1311,7 +1311,7 @@
       "release": {
         "tag": "v1.37.0",
         "published_at": "2026-11-02T09:20:23Z",
-        "days": 9
+        "days": 10
       }
     },
     "summary": {}
@@ -1348,7 +1348,7 @@
       "repository": "suitenumerique/projects",
       "url": "https://github.com/suitenumerique/projects",
       "branch": "main",
-      "scan_date": "2026-11-12T04:25:01.519Z",
+      "scan_date": "2026-11-13T03:40:39.519Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -1425,7 +1425,7 @@
       "release": {
         "tag": "v1.2.0",
         "published_at": "2026-02-06T18:09:52Z",
-        "days": 278
+        "days": 279
       }
     },
     "summary": {}
@@ -1462,7 +1462,7 @@
       "repository": "suiteterritoriale/home",
       "url": "https://github.com/suiteterritoriale/home",
       "branch": "main",
-      "scan_date": "2026-11-12T04:25:05.108Z",
+      "scan_date": "2026-11-13T03:40:43.167Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -1472,7 +1472,7 @@
         "dockerfile": "Dockerfile",
         "runtime": {
           "language": "node",
-          "version": "24",
+          "version": "24.22.3",
           "strategy": "node-base-image",
           "source": "Dockerfile"
         },
@@ -1528,7 +1528,7 @@
         "images": [
           {
             "dockerfile": "Dockerfile",
-            "image": "node:24-slim",
+            "image": "node:24.22.3-slim",
             "digest_pinned": false,
             "stage": "runtime-dev"
           }
@@ -1574,7 +1574,7 @@
       "repository": "suiteterritoriale/helpcenter",
       "url": "https://github.com/suiteterritoriale/helpcenter",
       "branch": "main",
-      "scan_date": "2026-11-12T04:25:05.918Z",
+      "scan_date": "2026-11-13T03:40:43.901Z",
       "error": null,
       "security_md": {
         "present": true,
