@@ -2,7 +2,7 @@
   "repository": "suitenumerique/conversations",
   "url": "https://github.com/suitenumerique/conversations",
   "branch": "main",
-  "scan_date": "2026-11-15T03:14:51.630Z",
+  "scan_date": "2026-11-16T03:17:27.092Z",
   "error": null,
   "security_md": {
     "present": true,
@@ -113,8 +113,8 @@
     ]
   },
   "release": {
-    "tag": "v0.0.28",
-    "published_at": "2026-11-03T21:22:07Z",
-    "days": 11
+    "tag": "v0.0.29",
+    "published_at": "2026-11-15T20:44:07Z",
+    "days": 0
   }
 }
