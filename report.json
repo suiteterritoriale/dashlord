@@ -31,7 +31,7 @@
       "repository": "suitenumerique/messages",
       "url": "https://github.com/suitenumerique/messages",
       "branch": "main",
-      "scan_date": "2026-11-16T03:17:22.004Z",
+      "scan_date": "2026-11-17T05:17:47.359Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -146,7 +146,7 @@
       "release": {
         "tag": "v0.10.0",
         "published_at": "2026-09-29T13:14:21Z",
-        "days": 47
+        "days": 48
       }
     },
     "summary": {}
@@ -183,7 +183,7 @@
       "repository": "suitenumerique/calendars",
       "url": "https://github.com/suitenumerique/calendars",
       "branch": "main",
-      "scan_date": "2026-11-16T03:17:22.891Z",
+      "scan_date": "2026-11-17T05:17:48.935Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -297,7 +297,7 @@
       "release": {
         "tag": "v0.2.0",
         "published_at": "2026-11-12T16:31:19Z",
-        "days": 3
+        "days": 4
       }
     },
     "summary": {}
@@ -334,7 +334,7 @@
       "repository": "suitenumerique/drive",
       "url": "https://github.com/suitenumerique/drive",
       "branch": "main",
-      "scan_date": "2026-11-16T03:17:23.958Z",
+      "scan_date": "2026-11-17T05:17:50.310Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -443,7 +443,7 @@
       "release": {
         "tag": "v0.26.0",
         "published_at": "2026-11-04T09:37:30Z",
-        "days": 11
+        "days": 12
       }
     },
     "summary": {}
@@ -480,7 +480,7 @@
       "repository": "suitenumerique/transfers",
       "url": "https://github.com/suitenumerique/transfers",
       "branch": "main",
-      "scan_date": "2026-11-16T03:17:24.586Z",
+      "scan_date": "2026-11-17T05:17:51.119Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -499,7 +499,7 @@
           "images": [
             {
               "image": "gcr.io/distroless/cc-debian13:nonroot",
-              "digest_pinned": false,
+              "digest_pinned": true,
               "stage": "runtime-distroless-prod"
             }
           ]
@@ -523,7 +523,7 @@
           "images": [
             {
               "image": "gcr.io/distroless/static-debian13:nonroot",
-              "digest_pinned": false,
+              "digest_pinned": true,
               "stage": "runtime-prod"
             }
           ]
@@ -569,18 +569,18 @@
         }
       },
       "base_images": {
-        "pinned": false,
+        "pinned": true,
         "images": [
           {
             "dockerfile": "src/backend/Dockerfile",
             "image": "debian:trixie-slim",
-            "digest_pinned": false,
+            "digest_pinned": true,
             "stage": "base"
           },
           {
             "dockerfile": "src/backend/Dockerfile",
             "image": "gcr.io/distroless/cc-debian13:nonroot",
-            "digest_pinned": false,
+            "digest_pinned": true,
             "stage": "runtime-distroless-prod"
           },
           {
@@ -591,22 +591,22 @@
           },
           {
             "dockerfile": "src/frontend/Dockerfile",
-            "image": "golang:1.26.9-alpine",
+            "image": "golang:1.26.11-alpine",
             "digest_pinned": true,
             "stage": "go-build"
           },
           {
             "dockerfile": "src/frontend/Dockerfile",
             "image": "gcr.io/distroless/static-debian13:nonroot",
-            "digest_pinned": false,
+            "digest_pinned": true,
             "stage": "runtime-prod"
           }
         ]
       },
       "release": {
-        "tag": null,
-        "published_at": null,
-        "days": null
+        "tag": "v0.5.3",
+        "published_at": "2026-11-16T15:19:55Z",
+        "days": 0
       }
     },
     "summary": {}
@@ -643,7 +643,7 @@
       "repository": "suiteterritoriale/deploycenter",
       "url": "https://github.com/suiteterritoriale/deploycenter",
       "branch": "main",
-      "scan_date": "2026-11-16T03:17:25.356Z",
+      "scan_date": "2026-11-17T05:17:52.039Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -806,7 +806,7 @@
       "repository": "suitenumerique/file-scanner",
       "url": "https://github.com/suitenumerique/file-scanner",
       "branch": "main",
-      "scan_date": "2026-11-16T03:17:26.062Z",
+      "scan_date": "2026-11-17T05:17:52.785Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -825,7 +825,7 @@
           "images": [
             {
               "image": "gcr.io/distroless/cc-debian13:nonroot",
-              "digest_pinned": false,
+              "digest_pinned": true,
               "stage": "runtime-distroless-prod"
             }
           ]
@@ -851,24 +851,18 @@
         "node": null
       },
       "base_images": {
-        "pinned": false,
+        "pinned": true,
         "images": [
           {
             "dockerfile": "Dockerfile",
-            "image": "ghcr.io/astral-sh/uv:${UV_VERSION}",
-            "digest_pinned": false,
-            "stage": "uv-bin"
-          },
-          {
-            "dockerfile": "Dockerfile",
             "image": "debian:trixie-slim",
-            "digest_pinned": false,
+            "digest_pinned": true,
             "stage": "uv"
           },
           {
             "dockerfile": "Dockerfile",
             "image": "gcr.io/distroless/cc-debian13:nonroot",
-            "digest_pinned": false,
+            "digest_pinned": true,
             "stage": "runtime-distroless-prod"
           }
         ]
@@ -913,7 +907,7 @@
       "repository": "suitenumerique/conversations",
       "url": "https://github.com/suitenumerique/conversations",
       "branch": "main",
-      "scan_date": "2026-11-16T03:17:27.092Z",
+      "scan_date": "2026-11-17T05:17:53.871Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -1026,7 +1020,7 @@
       "release": {
         "tag": "v0.0.29",
         "published_at": "2026-11-15T20:44:07Z",
-        "days": 0
+        "days": 1
       }
     },
     "summary": {}
@@ -1063,7 +1057,7 @@
       "repository": "suitenumerique/docs",
       "url": "https://github.com/suitenumerique/docs",
       "branch": "main",
-      "scan_date": "2026-11-16T03:17:28.679Z",
+      "scan_date": "2026-11-17T05:17:55.517Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -1109,7 +1103,7 @@
         },
         {
           "name": "@gouvfr-lasuite/ui-tokens",
-          "spec": "3.2.0",
+          "spec": "3.2.1",
           "source": "src/frontend/apps/impress/package.json"
         }
       ],
@@ -1123,15 +1117,15 @@
           }
         },
         "node": {
-          "next": "16.4.3",
+          "next": "16.4.5",
           "typescript": "*",
           "bundler": {
             "name": "next",
-            "version": "16.4.3"
+            "version": "16.4.5"
           },
           "router": {
             "name": "next",
-            "version": "16.4.3"
+            "version": "16.4.5"
           },
           "package_manager": {
             "name": "yarn",
@@ -1177,7 +1171,7 @@
       "release": {
         "tag": "v6.1.0",
         "published_at": "2026-11-13T13:11:23Z",
-        "days": 2
+        "days": 3
       }
     },
     "summary": {}
@@ -1214,7 +1208,7 @@
       "repository": "suitenumerique/meet",
       "url": "https://github.com/suitenumerique/meet",
       "branch": "main",
-      "scan_date": "2026-11-16T03:17:29.947Z",
+      "scan_date": "2026-11-17T05:17:57.667Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -1311,7 +1305,7 @@
       "release": {
         "tag": "v1.37.0",
         "published_at": "2026-11-02T09:20:23Z",
-        "days": 13
+        "days": 14
       }
     },
     "summary": {}
@@ -1348,7 +1342,7 @@
       "repository": "suitenumerique/projects",
       "url": "https://github.com/suitenumerique/projects",
       "branch": "main",
-      "scan_date": "2026-11-16T03:17:30.988Z",
+      "scan_date": "2026-11-17T05:17:58.822Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -1425,7 +1419,7 @@
       "release": {
         "tag": "v1.2.0",
         "published_at": "2026-02-06T18:09:52Z",
-        "days": 282
+        "days": 283
       }
     },
     "summary": {}
@@ -1462,7 +1456,7 @@
       "repository": "suiteterritoriale/home",
       "url": "https://github.com/suiteterritoriale/home",
       "branch": "main",
-      "scan_date": "2026-11-16T03:17:34.350Z",
+      "scan_date": "2026-11-17T05:18:03.041Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -1574,7 +1568,7 @@
       "repository": "suiteterritoriale/helpcenter",
       "url": "https://github.com/suiteterritoriale/helpcenter",
       "branch": "main",
-      "scan_date": "2026-11-16T03:17:34.914Z",
+      "scan_date": "2026-11-17T05:18:03.762Z",
       "error": null,
       "security_md": {
         "present": true,
