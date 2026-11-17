@@ -2,7 +2,7 @@
   "repository": "suitenumerique/transfers",
   "url": "https://github.com/suitenumerique/transfers",
   "branch": "main",
-  "scan_date": "2026-11-16T03:17:24.586Z",
+  "scan_date": "2026-11-17T05:17:51.119Z",
   "error": null,
   "security_md": {
     "present": true,
@@ -21,7 +21,7 @@
       "images": [
         {
           "image": "gcr.io/distroless/cc-debian13:nonroot",
-          "digest_pinned": false,
+          "digest_pinned": true,
           "stage": "runtime-distroless-prod"
         }
       ]
@@ -45,7 +45,7 @@
       "images": [
         {
           "image": "gcr.io/distroless/static-debian13:nonroot",
-          "digest_pinned": false,
+          "digest_pinned": true,
           "stage": "runtime-prod"
         }
       ]
@@ -91,18 +91,18 @@
     }
   },
   "base_images": {
-    "pinned": false,
+    "pinned": true,
     "images": [
       {
         "dockerfile": "src/backend/Dockerfile",
         "image": "debian:trixie-slim",
-        "digest_pinned": false,
+        "digest_pinned": true,
         "stage": "base"
       },
       {
         "dockerfile": "src/backend/Dockerfile",
         "image": "gcr.io/distroless/cc-debian13:nonroot",
-        "digest_pinned": false,
+        "digest_pinned": true,
         "stage": "runtime-distroless-prod"
       },
       {
@@ -113,21 +113,21 @@
       },
       {
         "dockerfile": "src/frontend/Dockerfile",
-        "image": "golang:1.26.9-alpine",
+        "image": "golang:1.26.11-alpine",
         "digest_pinned": true,
         "stage": "go-build"
       },
       {
         "dockerfile": "src/frontend/Dockerfile",
         "image": "gcr.io/distroless/static-debian13:nonroot",
-        "digest_pinned": false,
+        "digest_pinned": true,
         "stage": "runtime-prod"
       }
     ]
   },
   "release": {
-    "tag": null,
-    "published_at": null,
-    "days": null
+    "tag": "v0.5.3",
+    "published_at": "2026-11-16T15:19:55Z",
+    "days": 0
   }
 }

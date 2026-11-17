@@ -2,7 +2,7 @@
   "repository": "suitenumerique/docs",
   "url": "https://github.com/suitenumerique/docs",
   "branch": "main",
-  "scan_date": "2026-11-16T03:17:28.679Z",
+  "scan_date": "2026-11-17T05:17:55.517Z",
   "error": null,
   "security_md": {
     "present": true,
@@ -48,7 +48,7 @@
     },
     {
       "name": "@gouvfr-lasuite/ui-tokens",
-      "spec": "3.2.0",
+      "spec": "3.2.1",
       "source": "src/frontend/apps/impress/package.json"
     }
   ],
@@ -62,15 +62,15 @@
       }
     },
     "node": {
-      "next": "16.4.3",
+      "next": "16.4.5",
       "typescript": "*",
       "bundler": {
         "name": "next",
-        "version": "16.4.3"
+        "version": "16.4.5"
       },
       "router": {
         "name": "next",
-        "version": "16.4.3"
+        "version": "16.4.5"
       },
       "package_manager": {
         "name": "yarn",
@@ -116,6 +116,6 @@
   "release": {
     "tag": "v6.1.0",
     "published_at": "2026-11-13T13:11:23Z",
-    "days": 2
+    "days": 3
   }
 }

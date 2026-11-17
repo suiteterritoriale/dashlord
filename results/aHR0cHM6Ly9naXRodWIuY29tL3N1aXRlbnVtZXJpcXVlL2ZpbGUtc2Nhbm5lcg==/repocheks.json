@@ -2,7 +2,7 @@
   "repository": "suitenumerique/file-scanner",
   "url": "https://github.com/suitenumerique/file-scanner",
   "branch": "main",
-  "scan_date": "2026-11-16T03:17:26.062Z",
+  "scan_date": "2026-11-17T05:17:52.785Z",
   "error": null,
   "security_md": {
     "present": true,
@@ -21,7 +21,7 @@
       "images": [
         {
           "image": "gcr.io/distroless/cc-debian13:nonroot",
-          "digest_pinned": false,
+          "digest_pinned": true,
           "stage": "runtime-distroless-prod"
         }
       ]
@@ -47,24 +47,18 @@
     "node": null
   },
   "base_images": {
-    "pinned": false,
+    "pinned": true,
     "images": [
       {
         "dockerfile": "Dockerfile",
-        "image": "ghcr.io/astral-sh/uv:${UV_VERSION}",
-        "digest_pinned": false,
-        "stage": "uv-bin"
-      },
-      {
-        "dockerfile": "Dockerfile",
         "image": "debian:trixie-slim",
-        "digest_pinned": false,
+        "digest_pinned": true,
         "stage": "uv"
       },
       {
         "dockerfile": "Dockerfile",
         "image": "gcr.io/distroless/cc-debian13:nonroot",
-        "digest_pinned": false,
+        "digest_pinned": true,
         "stage": "runtime-distroless-prod"
       }
     ]
