@@ -2,7 +2,7 @@
   "repository": "suitenumerique/drive",
   "url": "https://github.com/suitenumerique/drive",
   "branch": "main",
-  "scan_date": "2026-11-17T05:17:50.310Z",
+  "scan_date": "2026-11-18T04:46:06.178Z",
   "error": null,
   "security_md": {
     "present": true,
@@ -43,7 +43,7 @@
   "ui_components": [
     {
       "name": "@gouvfr-lasuite/ui-components",
-      "spec": "1.5.0",
+      "spec": "2.0.0",
       "source": "src/frontend/apps/drive/package.json"
     }
   ],
@@ -109,8 +109,8 @@
     ]
   },
   "release": {
-    "tag": "v0.26.0",
-    "published_at": "2026-11-04T09:37:30Z",
-    "days": 12
+    "tag": "v1.0.0",
+    "published_at": "2026-11-17T16:56:02Z",
+    "days": 0
   }
 }
