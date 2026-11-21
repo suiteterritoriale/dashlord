@@ -2,7 +2,7 @@
   "repository": "suitenumerique/meet",
   "url": "https://github.com/suitenumerique/meet",
   "branch": "main",
-  "scan_date": "2026-11-20T04:27:02.663Z",
+  "scan_date": "2026-11-21T04:20:47.595Z",
   "error": null,
   "security_md": {
     "present": true,
@@ -90,7 +90,7 @@
       },
       {
         "dockerfile": "src/frontend/Dockerfile",
-        "image": "nginx/nginx-unprivileged:1.30.6-alpine3.24",
+        "image": "nginx/nginx-unprivileged:1.31.9-alpine3.24",
         "digest_pinned": false,
         "stage": "frontend-production"
       }
@@ -99,6 +99,6 @@
   "release": {
     "tag": "v1.37.0",
     "published_at": "2026-11-02T09:20:23Z",
-    "days": 17
+    "days": 18
   }
 }
