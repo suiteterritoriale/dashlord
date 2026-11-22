@@ -2,7 +2,7 @@
   "repository": "suitenumerique/docs",
   "url": "https://github.com/suitenumerique/docs",
   "branch": "main",
-  "scan_date": "2026-11-21T04:20:44.945Z",
+  "scan_date": "2026-11-22T03:35:11.044Z",
   "error": null,
   "security_md": {
     "present": true,
@@ -116,6 +116,6 @@
   "release": {
     "tag": "v6.1.0",
     "published_at": "2026-11-13T13:11:23Z",
-    "days": 7
+    "days": 8
   }
 }
