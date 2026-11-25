@@ -2,7 +2,7 @@
   "repository": "suiteterritoriale/helpcenter",
   "url": "https://github.com/suiteterritoriale/helpcenter",
   "branch": "main",
-  "scan_date": "2026-11-24T07:09:06.417Z",
+  "scan_date": "2026-11-25T05:44:00.164Z",
   "error": null,
   "security_md": {
     "present": true,
@@ -12,7 +12,7 @@
     "dockerfile": "Dockerfile",
     "runtime": {
       "language": "node",
-      "version": "22",
+      "version": "26.13.1",
       "strategy": "node-base-image",
       "source": "Dockerfile"
     },
@@ -47,15 +47,15 @@
   "dependencies": {
     "python": null,
     "node": {
-      "next": "15.5.16",
+      "next": "15.5.29",
       "typescript": "5.9.2",
       "bundler": {
         "name": "next",
-        "version": "15.5.16"
+        "version": "15.5.29"
       },
       "router": {
         "name": "next",
-        "version": "15.5.16"
+        "version": "15.5.29"
       },
       "package_manager": {
         "name": "npm",
@@ -68,7 +68,7 @@
     "images": [
       {
         "dockerfile": "Dockerfile",
-        "image": "node:22-slim",
+        "image": "node:26.13.1-slim",
         "digest_pinned": false,
         "stage": "runtime-dev"
       }
