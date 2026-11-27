@@ -2,7 +2,7 @@
   "repository": "suitenumerique/conversations",
   "url": "https://github.com/suitenumerique/conversations",
   "branch": "main",
-  "scan_date": "2026-11-26T05:32:59.665Z",
+  "scan_date": "2026-11-27T05:28:14.823Z",
   "error": null,
   "security_md": {
     "present": true,
@@ -71,7 +71,7 @@
       "typescript": "*",
       "bundler": {
         "name": "vite",
-        "version": "8.3.5"
+        "version": "8.3.8"
       },
       "router": {
         "name": "react-router",
@@ -115,6 +115,6 @@
   "release": {
     "tag": "v0.0.29",
     "published_at": "2026-11-15T20:44:07Z",
-    "days": 10
+    "days": 11
   }
 }

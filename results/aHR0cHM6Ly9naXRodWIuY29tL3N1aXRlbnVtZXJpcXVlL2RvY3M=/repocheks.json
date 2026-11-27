@@ -2,7 +2,7 @@
   "repository": "suitenumerique/docs",
   "url": "https://github.com/suitenumerique/docs",
   "branch": "main",
-  "scan_date": "2026-11-26T05:33:00.949Z",
+  "scan_date": "2026-11-27T05:28:16.527Z",
   "error": null,
   "security_md": {
     "present": true,
@@ -55,7 +55,7 @@
   "dependencies": {
     "python": {
       "django": "5.2.17",
-      "django-lasuite": "0.1.0",
+      "django-lasuite": "1.2.0",
       "package_manager": {
         "name": "uv",
         "version": "0.13.4"
@@ -114,8 +114,8 @@
     ]
   },
   "release": {
-    "tag": "v6.1.0",
-    "published_at": "2026-11-13T13:11:23Z",
-    "days": 12
+    "tag": "v6.1.1",
+    "published_at": "2026-11-26T19:08:39Z",
+    "days": 0
   }
 }
