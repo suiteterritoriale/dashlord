@@ -31,7 +31,7 @@
       "repository": "suitenumerique/messages",
       "url": "https://github.com/suitenumerique/messages",
       "branch": "main",
-      "scan_date": "2026-11-26T05:32:56.101Z",
+      "scan_date": "2026-11-27T05:28:08.597Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -146,7 +146,7 @@
       "release": {
         "tag": "v0.10.0",
         "published_at": "2026-09-29T13:14:21Z",
-        "days": 57
+        "days": 58
       }
     },
     "summary": {}
@@ -183,7 +183,7 @@
       "repository": "suitenumerique/calendars",
       "url": "https://github.com/suitenumerique/calendars",
       "branch": "main",
-      "scan_date": "2026-11-26T05:32:56.756Z",
+      "scan_date": "2026-11-27T05:28:09.971Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -297,7 +297,7 @@
       "release": {
         "tag": "v0.2.0",
         "published_at": "2026-11-12T16:31:19Z",
-        "days": 13
+        "days": 14
       }
     },
     "summary": {}
@@ -334,7 +334,7 @@
       "repository": "suitenumerique/drive",
       "url": "https://github.com/suitenumerique/drive",
       "branch": "main",
-      "scan_date": "2026-11-26T05:32:57.531Z",
+      "scan_date": "2026-11-27T05:28:11.169Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -443,7 +443,7 @@
       "release": {
         "tag": "v1.1.1",
         "published_at": "2026-11-23T17:42:48Z",
-        "days": 2
+        "days": 3
       }
     },
     "summary": {}
@@ -480,7 +480,7 @@
       "repository": "suitenumerique/transfers",
       "url": "https://github.com/suitenumerique/transfers",
       "branch": "main",
-      "scan_date": "2026-11-26T05:32:57.969Z",
+      "scan_date": "2026-11-27T05:28:12.092Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -606,7 +606,7 @@
       "release": {
         "tag": "v0.5.3",
         "published_at": "2026-11-16T15:19:55Z",
-        "days": 9
+        "days": 10
       }
     },
     "summary": {}
@@ -643,7 +643,7 @@
       "repository": "suiteterritoriale/deploycenter",
       "url": "https://github.com/suiteterritoriale/deploycenter",
       "branch": "main",
-      "scan_date": "2026-11-26T05:32:58.469Z",
+      "scan_date": "2026-11-27T05:28:12.994Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -709,15 +709,15 @@
           }
         },
         "node": {
-          "next": "16.4.3",
+          "next": "16.4.6",
           "typescript": "6.0.3",
           "bundler": {
             "name": "next",
-            "version": "16.4.3"
+            "version": "16.4.6"
           },
           "router": {
             "name": "next",
-            "version": "16.4.3"
+            "version": "16.4.6"
           },
           "package_manager": {
             "name": "npm",
@@ -806,7 +806,7 @@
       "repository": "suitenumerique/file-scanner",
       "url": "https://github.com/suitenumerique/file-scanner",
       "branch": "main",
-      "scan_date": "2026-11-26T05:32:58.879Z",
+      "scan_date": "2026-11-27T05:28:13.769Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -870,7 +870,7 @@
       "release": {
         "tag": "v0.5.0",
         "published_at": "2026-11-19T15:30:51Z",
-        "days": 6
+        "days": 7
       }
     },
     "summary": {}
@@ -907,7 +907,7 @@
       "repository": "suitenumerique/conversations",
       "url": "https://github.com/suitenumerique/conversations",
       "branch": "main",
-      "scan_date": "2026-11-26T05:32:59.665Z",
+      "scan_date": "2026-11-27T05:28:14.823Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -976,7 +976,7 @@
           "typescript": "*",
           "bundler": {
             "name": "vite",
-            "version": "8.3.5"
+            "version": "8.3.8"
           },
           "router": {
             "name": "react-router",
@@ -1020,7 +1020,7 @@
       "release": {
         "tag": "v0.0.29",
         "published_at": "2026-11-15T20:44:07Z",
-        "days": 10
+        "days": 11
       }
     },
     "summary": {}
@@ -1057,7 +1057,7 @@
       "repository": "suitenumerique/docs",
       "url": "https://github.com/suitenumerique/docs",
       "branch": "main",
-      "scan_date": "2026-11-26T05:33:00.949Z",
+      "scan_date": "2026-11-27T05:28:16.527Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -1110,7 +1110,7 @@
       "dependencies": {
         "python": {
           "django": "5.2.17",
-          "django-lasuite": "0.1.0",
+          "django-lasuite": "1.2.0",
           "package_manager": {
             "name": "uv",
             "version": "0.13.4"
@@ -1169,9 +1169,9 @@
         ]
       },
       "release": {
-        "tag": "v6.1.0",
-        "published_at": "2026-11-13T13:11:23Z",
-        "days": 12
+        "tag": "v6.1.1",
+        "published_at": "2026-11-26T19:08:39Z",
+        "days": 0
       }
     },
     "summary": {}
@@ -1208,7 +1208,7 @@
       "repository": "suitenumerique/meet",
       "url": "https://github.com/suitenumerique/meet",
       "branch": "main",
-      "scan_date": "2026-11-26T05:33:02.205Z",
+      "scan_date": "2026-11-27T05:28:18.620Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -1303,9 +1303,9 @@
         ]
       },
       "release": {
-        "tag": "v1.37.0",
-        "published_at": "2026-11-02T09:20:23Z",
-        "days": 23
+        "tag": "v1.38.0",
+        "published_at": "2026-11-26T11:17:36Z",
+        "days": 0
       }
     },
     "summary": {}
@@ -1342,7 +1342,7 @@
       "repository": "suitenumerique/projects",
       "url": "https://github.com/suitenumerique/projects",
       "branch": "main",
-      "scan_date": "2026-11-26T05:33:03.029Z",
+      "scan_date": "2026-11-27T05:28:19.903Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -1417,9 +1417,9 @@
         ]
       },
       "release": {
-        "tag": "v1.2.0",
-        "published_at": "2026-02-06T18:09:52Z",
-        "days": 292
+        "tag": "v1.4.0",
+        "published_at": "2026-11-26T20:17:22Z",
+        "days": 0
       }
     },
     "summary": {}
@@ -1456,7 +1456,7 @@
       "repository": "suiteterritoriale/home",
       "url": "https://github.com/suiteterritoriale/home",
       "branch": "main",
-      "scan_date": "2026-11-26T05:33:06.327Z",
+      "scan_date": "2026-11-27T05:28:23.470Z",
       "error": null,
       "security_md": {
         "present": true,
@@ -1568,7 +1568,7 @@
       "repository": "suiteterritoriale/helpcenter",
       "url": "https://github.com/suiteterritoriale/helpcenter",
       "branch": "main",
-      "scan_date": "2026-11-26T05:33:06.803Z",
+      "scan_date": "2026-11-27T05:28:24.181Z",
       "error": null,
       "security_md": {
         "present": true,
