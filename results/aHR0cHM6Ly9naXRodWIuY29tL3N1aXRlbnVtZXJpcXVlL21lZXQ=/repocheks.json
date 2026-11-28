@@ -2,7 +2,7 @@
   "repository": "suitenumerique/meet",
   "url": "https://github.com/suitenumerique/meet",
   "branch": "main",
-  "scan_date": "2026-11-27T05:28:18.620Z",
+  "scan_date": "2026-11-28T05:03:15.912Z",
   "error": null,
   "security_md": {
     "present": true,
@@ -99,6 +99,6 @@
   "release": {
     "tag": "v1.38.0",
     "published_at": "2026-11-26T11:17:36Z",
-    "days": 0
+    "days": 1
   }
 }

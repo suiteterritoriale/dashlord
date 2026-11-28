@@ -2,7 +2,7 @@
   "repository": "suitenumerique/file-scanner",
   "url": "https://github.com/suitenumerique/file-scanner",
   "branch": "main",
-  "scan_date": "2026-11-27T05:28:13.769Z",
+  "scan_date": "2026-11-28T05:03:11.599Z",
   "error": null,
   "security_md": {
     "present": true,
@@ -66,6 +66,6 @@
   "release": {
     "tag": "v0.5.0",
     "published_at": "2026-11-19T15:30:51Z",
-    "days": 7
+    "days": 8
   }
 }
